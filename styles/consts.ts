@@ -1,2 +1,2 @@
-export const ACCENT_COLOR = '#bd66fffc';
-export const ACCENT_COLOR_LIGHT = '#E8C4C4';
+export const HERO_ACCENT_COLOR = '#bd66fffc';
+export const HERO_GRADIENT_ACCENT_COLOR = '#2f00529f';

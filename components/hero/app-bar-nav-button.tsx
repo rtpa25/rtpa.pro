@@ -1,7 +1,7 @@
 import { Button, Text } from '@chakra-ui/react';
 import { FC } from 'react';
 import { Link as ReactScrollLink } from 'react-scroll';
-import { ACCENT_COLOR } from '../../styles/consts';
+import { HERO_ACCENT_COLOR } from '../../styles/consts';
 
 interface AppBarNavButtonProps {
     to: string;
@@ -11,7 +11,7 @@ interface AppBarNavButtonProps {
 
 const AppBarNavButton: FC<AppBarNavButtonProps> = ({ btnText, idx, to }) => {
     return (
-        <ReactScrollLink to={to} smooth={true} duration={2000}>
+        <ReactScrollLink to={to} smooth={true} duration={1000}>
             <Button
                 fontFamily={'mono'}
                 fontWeight={'normal'}
@@ -19,9 +19,9 @@ const AppBarNavButton: FC<AppBarNavButtonProps> = ({ btnText, idx, to }) => {
                 _focus={{ outline: 'none', bgColor: 'inherit' }}
                 _hover={{
                     bgColor: 'inherit',
-                    color: ACCENT_COLOR,
+                    color: HERO_ACCENT_COLOR,
                 }}>
-                <Text mx={1} color={ACCENT_COLOR}>
+                <Text mx={1} color={HERO_ACCENT_COLOR}>
                     0{idx + 1}.{' '}
                 </Text>
                 <Text _hover={{ textDecoration: 'underline' }}>{btnText}</Text>

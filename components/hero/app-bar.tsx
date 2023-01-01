@@ -7,7 +7,7 @@ import {
     useDisclosure,
 } from '@chakra-ui/react';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { ACCENT_COLOR } from '../../styles/consts';
+import { HERO_ACCENT_COLOR } from '../../styles/consts';
 import AppBarNavButton from './app-bar-nav-button';
 import SideAppBarDrawer from './side-app-bar-drawer';
 
@@ -35,7 +35,7 @@ const AppBar = () => {
             alignItems='baseline'
             justifyContent={'space-between'}>
             <Heading
-                color={ACCENT_COLOR}
+                color={HERO_ACCENT_COLOR}
                 fontWeight='normal'
                 fontFamily={'serif'}
                 cursor={'pointer'}
@@ -61,8 +61,8 @@ const AppBar = () => {
                 <Button
                     variant={'outline'}
                     ml={4}
-                    borderColor={ACCENT_COLOR}
-                    color={ACCENT_COLOR}>
+                    borderColor={HERO_ACCENT_COLOR}
+                    color={HERO_ACCENT_COLOR}>
                     Resume
                 </Button>
             </Flex>
@@ -71,7 +71,7 @@ const AppBar = () => {
                 onClick={onOpen}
                 display={['flex', 'flex', 'flex', 'none']}
                 aria-label='hamburger'
-                color={ACCENT_COLOR}
+                color={HERO_ACCENT_COLOR}
                 icon={<GiHamburgerMenu />}
             />
             <SideAppBarDrawer isOpen={isOpen} onClose={onClose} />

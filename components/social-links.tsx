@@ -1,7 +1,7 @@
 import { Box, ListItem, UnorderedList } from '@chakra-ui/react';
 import Link from 'next/link';
 import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
-import { ACCENT_COLOR, ACCENT_COLOR_LIGHT } from '../styles/consts';
+import { HERO_ACCENT_COLOR } from '../styles/consts';
 
 const SocialLinks = () => {
     return (
@@ -18,7 +18,7 @@ const SocialLinks = () => {
                     width: '.8px',
                     height: '6rem',
                     margin: '0 auto',
-                    bgColor: ACCENT_COLOR,
+                    bgColor: HERO_ACCENT_COLOR,
                 }}>
                 <ListItem my={10}>
                     <Box
@@ -28,10 +28,10 @@ const SocialLinks = () => {
                         transitionProperty={'all'}
                         transitionTimingFunction={'ease-in'}
                         transform={'auto'}
-                        color={ACCENT_COLOR}
+                        color={HERO_ACCENT_COLOR}
                         _hover={{
                             translateY: -2,
-                            color: ACCENT_COLOR,
+                            color: HERO_ACCENT_COLOR,
                         }}>
                         <Link
                             href={'https://github.com/rtpa25'}
@@ -45,14 +45,14 @@ const SocialLinks = () => {
                     <Box
                         w={6}
                         h={6}
-                        color={ACCENT_COLOR}
+                        color={HERO_ACCENT_COLOR}
                         transitionDuration={'0.2s'}
                         transitionProperty={'all'}
                         transitionTimingFunction={'ease-in'}
                         transform={'auto'}
                         _hover={{
                             translateY: -2,
-                            color: ACCENT_COLOR,
+                            color: HERO_ACCENT_COLOR,
                         }}>
                         <Link
                             href={'https://github.com/rtpa25'}
@@ -66,14 +66,14 @@ const SocialLinks = () => {
                     <Box
                         w={6}
                         h={6}
-                        color={ACCENT_COLOR}
+                        color={HERO_ACCENT_COLOR}
                         transitionDuration={'0.2s'}
                         transitionProperty={'all'}
                         transitionTimingFunction={'ease-in'}
                         transform={'auto'}
                         _hover={{
                             translateY: -2,
-                            color: ACCENT_COLOR,
+                            color: HERO_ACCENT_COLOR,
                         }}>
                         <Link
                             href={'https://github.com/rtpa25'}

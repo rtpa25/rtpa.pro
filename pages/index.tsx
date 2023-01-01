@@ -1,11 +1,12 @@
 import EmailSideLink from '../components/email-side-link';
 import SocialLinks from '../components/social-links';
-import { HeroSection } from '../sections';
+import { AboutSection, HeroSection } from '../sections';
 
 const Home = () => {
     return (
         <>
             <HeroSection />
+            <AboutSection />
             <SocialLinks />
             <EmailSideLink />
         </>
