@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
 import { Fade } from 'react-awesome-reveal';
-import { HERO_ACCENT_COLOR } from '../../styles/consts';
+import { ACCENT_COLOR } from '../../styles/consts';
 
 const Hero = () => {
     return (
@@ -15,7 +15,7 @@ const Hero = () => {
                 <Box ml={2}>
                     <Heading
                         fontFamily={'mono'}
-                        color={HERO_ACCENT_COLOR}
+                        color={ACCENT_COLOR}
                         fontSize='xl'
                         fontWeight={'light'}
                         lineHeight={1.2}>
@@ -25,7 +25,7 @@ const Hero = () => {
                 <Box>
                     <Heading
                         fontSize={['4xl', '5xl', '6xl', '8xl']}
-                        bgGradient={`linear(to-l, ${HERO_ACCENT_COLOR}, #ffffff)`}
+                        bgGradient={`linear(to-l, ${ACCENT_COLOR}, #ffffff)`}
                         bgClip='text'
                         letterSpacing={'tighter'}
                         fontWeight={'semibold'}
@@ -56,7 +56,7 @@ const Hero = () => {
                             "I'm a software engineer based out of India specializing in building full stack web apps. Currently, I'm an looking for an "
                         }
                         internship at a{' '}
-                        <span style={{ color: HERO_ACCENT_COLOR }}>
+                        <span style={{ color: ACCENT_COLOR }}>
                             high growth startup
                         </span>
                         .
@@ -69,8 +69,8 @@ const Hero = () => {
                         fontWeight={'normal'}
                         variant={'outline'}
                         fontFamily={'mono'}
-                        borderColor={HERO_ACCENT_COLOR}
-                        color={HERO_ACCENT_COLOR}>
+                        borderColor={ACCENT_COLOR}
+                        color={ACCENT_COLOR}>
                         Get in touch!
                     </Button>
                 </Box>

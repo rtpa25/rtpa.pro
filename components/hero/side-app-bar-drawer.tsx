@@ -11,7 +11,7 @@ import {
     UnorderedList,
 } from '@chakra-ui/react';
 import { FC } from 'react';
-import { HERO_ACCENT_COLOR } from '../../styles/consts';
+import { ACCENT_COLOR } from '../../styles/consts';
 
 interface SideAppBarDrawerProps {
     isOpen: boolean;
@@ -23,11 +23,7 @@ const SideAppBarDrawer: FC<SideAppBarDrawerProps> = ({ isOpen, onClose }) => {
         <Drawer onClose={onClose} isOpen={isOpen} size={'sm'}>
             <DrawerOverlay />
             <DrawerContent bgColor={'black'}>
-                <DrawerCloseButton
-                    m={3}
-                    color={HERO_ACCENT_COLOR}
-                    size={'lg'}
-                />
+                <DrawerCloseButton m={3} color={ACCENT_COLOR} size={'lg'} />
                 <DrawerBody
                     display={'flex'}
                     flexDir={'column'}
@@ -37,13 +33,13 @@ const SideAppBarDrawer: FC<SideAppBarDrawerProps> = ({ isOpen, onClose }) => {
                     <UnorderedList listStyleType={'none'} fontFamily='mono'>
                         <ListItem my={8}>
                             <Stack spacing={1}>
-                                <Text color={HERO_ACCENT_COLOR}>01.</Text>
+                                <Text color={ACCENT_COLOR}>01.</Text>
                                 <Button
                                     variant={'link'}
                                     fontSize={'xl'}
                                     _hover={{
                                         bgColor: 'inherit',
-                                        color: HERO_ACCENT_COLOR,
+                                        color: ACCENT_COLOR,
                                         textDecoration: 'underline',
                                     }}
                                     fontWeight={'normal'}
@@ -55,13 +51,13 @@ const SideAppBarDrawer: FC<SideAppBarDrawerProps> = ({ isOpen, onClose }) => {
 
                         <ListItem my={8}>
                             <Stack spacing={1}>
-                                <Text color={HERO_ACCENT_COLOR}>02.</Text>
+                                <Text color={ACCENT_COLOR}>02.</Text>
                                 <Button
                                     variant={'link'}
                                     fontSize={'xl'}
                                     _hover={{
                                         bgColor: 'inherit',
-                                        color: HERO_ACCENT_COLOR,
+                                        color: ACCENT_COLOR,
                                         textDecoration: 'underline',
                                     }}
                                     fontWeight={'normal'}
@@ -73,13 +69,13 @@ const SideAppBarDrawer: FC<SideAppBarDrawerProps> = ({ isOpen, onClose }) => {
 
                         <ListItem my={8}>
                             <Stack spacing={1}>
-                                <Text color={HERO_ACCENT_COLOR}>03.</Text>
+                                <Text color={ACCENT_COLOR}>03.</Text>
                                 <Button
                                     variant={'link'}
                                     fontSize={'xl'}
                                     _hover={{
                                         bgColor: 'inherit',
-                                        color: HERO_ACCENT_COLOR,
+                                        color: ACCENT_COLOR,
                                         textDecoration: 'underline',
                                     }}
                                     fontWeight={'normal'}
@@ -91,13 +87,13 @@ const SideAppBarDrawer: FC<SideAppBarDrawerProps> = ({ isOpen, onClose }) => {
 
                         <ListItem my={8}>
                             <Stack spacing={1}>
-                                <Text color={HERO_ACCENT_COLOR}>04.</Text>
+                                <Text color={ACCENT_COLOR}>04.</Text>
                                 <Button
                                     variant={'link'}
                                     fontSize={'xl'}
                                     _hover={{
                                         bgColor: 'inherit',
-                                        color: HERO_ACCENT_COLOR,
+                                        color: ACCENT_COLOR,
                                         textDecoration: 'underline',
                                     }}
                                     fontWeight={'normal'}
@@ -109,13 +105,13 @@ const SideAppBarDrawer: FC<SideAppBarDrawerProps> = ({ isOpen, onClose }) => {
 
                         <ListItem my={8}>
                             <Stack spacing={1}>
-                                <Text color={HERO_ACCENT_COLOR}>05.</Text>
+                                <Text color={ACCENT_COLOR}>05.</Text>
                                 <Button
                                     variant={'link'}
                                     fontSize={'xl'}
                                     _hover={{
                                         bgColor: 'inherit',
-                                        color: HERO_ACCENT_COLOR,
+                                        color: ACCENT_COLOR,
                                         textDecoration: 'underline',
                                     }}
                                     fontWeight={'normal'}
@@ -131,8 +127,8 @@ const SideAppBarDrawer: FC<SideAppBarDrawerProps> = ({ isOpen, onClose }) => {
                         ml={4}
                         w={'40%'}
                         py={6}
-                        borderColor={HERO_ACCENT_COLOR}
-                        color={HERO_ACCENT_COLOR}>
+                        borderColor={ACCENT_COLOR}
+                        color={ACCENT_COLOR}>
                         Resume
                     </Button>
                 </DrawerBody>

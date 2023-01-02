@@ -7,7 +7,7 @@ import {
     Text,
     UnorderedList,
 } from '@chakra-ui/react';
-import { HERO_ACCENT_COLOR } from '../../styles/consts';
+import { ACCENT_COLOR } from '../../styles/consts';
 import SkillListItem from './skill';
 
 const About = () => {
@@ -47,7 +47,7 @@ const About = () => {
                     }}>
                     <Text
                         fontSize={'3xl'}
-                        color={HERO_ACCENT_COLOR}
+                        color={ACCENT_COLOR}
                         mr={1}
                         display={'inline'}
                         fontFamily='mono'>
@@ -70,7 +70,7 @@ const About = () => {
                         to make a difference like yours. I have previously
                         worked at{' '}
                         <Link
-                            color={HERO_ACCENT_COLOR}
+                            color={ACCENT_COLOR}
                             href='https://supertokens.com'
                             rel='noopener noreferrer'
                             target='_blank'>
@@ -85,7 +85,7 @@ const About = () => {
                         color={'gray.500'}>
                         I have{' '}
                         <Link
-                            color={HERO_ACCENT_COLOR}
+                            color={ACCENT_COLOR}
                             href='https://www.linkedin.com/in/rtpa25/'
                             rel='noopener noreferrer'
                             target='_blank'>
@@ -94,7 +94,7 @@ const About = () => {
                         and I believe that it makes me more than just a
                         developer, enabling me to{' '}
                         <Link
-                            color={HERO_ACCENT_COLOR}
+                            color={ACCENT_COLOR}
                             href='https://github.com/rtpa25'
                             rel='noopener noreferrer'
                             target='_blank'>
@@ -110,7 +110,7 @@ const About = () => {
                         color={'gray.500'}>
                         Here are few{' '}
                         <Link
-                            color={HERO_ACCENT_COLOR}
+                            color={ACCENT_COLOR}
                             href='/resume.pdf'
                             rel='noopener noreferrer'
                             target='_blank'>
@@ -136,7 +136,7 @@ const About = () => {
                     mt={6}
                     h={'fit-content'}
                     rounded={'lg'}
-                    bgColor={HERO_ACCENT_COLOR}>
+                    bgColor={ACCENT_COLOR}>
                     <Image
                         opacity={0.8}
                         width={'100%'}
