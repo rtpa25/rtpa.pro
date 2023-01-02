@@ -10,7 +10,7 @@ const Hero = () => {
             flexDirection={'column'}
             justifyContent='center'
             alignItems={'flex-start'}
-            minH='90vh'>
+            minH={['80vh', '90vh']}>
             <Fade cascade={true} direction='up' duration={500}>
                 <Box ml={2}>
                     <Heading

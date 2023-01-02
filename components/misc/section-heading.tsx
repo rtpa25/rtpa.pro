@@ -15,6 +15,8 @@ const SectionHeading: FC<SectionHeadingProps> = ({
         <Heading
             color={'gray.300'}
             fontWeight='semibold'
+            fontSize={['2xl', '3xl', '4xl']}
+            my={['3', '4']}
             _after={{
                 content: '""',
                 display: 'inline-block',
@@ -26,7 +28,7 @@ const SectionHeading: FC<SectionHeadingProps> = ({
                 backgroundColor: 'gray.700',
             }}>
             <Text
-                fontSize={'3xl'}
+                fontSize={['2xl', '3xl']}
                 color={ACCENT_COLOR}
                 mr={1}
                 display={'inline'}
