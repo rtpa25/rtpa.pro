@@ -5,7 +5,7 @@ import { GRADIENT_ACCENT_COLOR } from '../styles/consts';
 
 const ExperienceSection = () => {
     return (
-        <Element name='about'>
+        <Element name='experience'>
             <Box
                 w={'full'}
                 bgGradient={`linear(to-r, #000000, ${GRADIENT_ACCENT_COLOR})`}>

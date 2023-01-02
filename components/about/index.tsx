@@ -8,6 +8,7 @@ import {
     UnorderedList,
 } from '@chakra-ui/react';
 import { ACCENT_COLOR } from '../../styles/consts';
+import SectionHeading from '../misc/section-heading';
 import SkillListItem from './skill';
 
 const About = () => {
@@ -29,32 +30,13 @@ const About = () => {
             flexDir={'column'}
             justifyContent='center'
             minH={'100vh'}
-            maxW={['80%', '70%', '60%']}
+            maxW={['90%', '80%', '70%', '60%']}
             mx={'auto'}>
             <Box my={10}>
-                <Heading
-                    color={'gray.300'}
-                    fontWeight='semibold'
-                    _after={{
-                        content: '""',
-                        display: 'inline-block',
-                        position: 'relative',
-                        top: '-.7rem',
-                        width: '40%',
-                        height: '1px',
-                        ml: '1rem',
-                        backgroundColor: 'gray.700',
-                    }}>
-                    <Text
-                        fontSize={'3xl'}
-                        color={ACCENT_COLOR}
-                        mr={1}
-                        display={'inline'}
-                        fontFamily='mono'>
-                        01.{' '}
-                    </Text>
-                    About Me
-                </Heading>
+                <SectionHeading
+                    sectionHeadingText={'About Me'}
+                    sectionHeadingNumber={1}
+                />
             </Box>
             <Flex flexDir={['column', 'column', 'column', 'row']}>
                 <Box flex={1.3} mr={6}>
