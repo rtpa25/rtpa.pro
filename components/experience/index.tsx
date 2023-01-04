@@ -1,7 +1,8 @@
 import { Box, Flex, ListItem, UnorderedList } from '@chakra-ui/react';
 import { useState } from 'react';
-import { orgData, orgList } from '../../data/orgData';
+import { orgData, orgList } from '../../data/org-data';
 import SectionHeading from '../misc/section-heading';
+import SectionWrapper from '../misc/section-wrapper';
 import OrgDataCard from './org-data-card';
 import OrgListButton from './org-list-button';
 
@@ -14,22 +15,20 @@ const Experience = () => {
     };
 
     return (
-        <Flex
-            flexDir={'column'}
-            justifyContent='center'
-            minH={'100vh'}
-            maxW={['90%', '80%', '70%', '60%']}
-            mx={'auto'}>
-            <Box my={16}>
+        <SectionWrapper>
+            <Box mb={[16]}>
                 <SectionHeading
-                    sectionHeadingText={'Where I’ve Worked'}
+                    sectionHeadingText={'Past Experiences'}
                     sectionHeadingNumber={2}
                 />
             </Box>
-            <Flex flexDir={['column', 'column', 'row', 'row']}>
+            <Flex
+                flexDir={['column', 'column', 'row', 'row']}
+                mb={[40, 30, 20, 10]}>
                 <Box flex={1}>
                     <UnorderedList
                         listStyleType={'none'}
+                        mx={0}
                         mb={[10, 10, 0, 0]}
                         overflow={['auto', 'auto', 'hidden', 'hidden']}
                         display={['flex', 'flex', 'block', 'block']}>
@@ -56,7 +55,7 @@ const Experience = () => {
                     />
                 </Box>
             </Flex>
-        </Flex>
+        </SectionWrapper>
     );
 };
 

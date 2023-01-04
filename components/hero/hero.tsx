@@ -10,7 +10,7 @@ const Hero = () => {
             flexDirection={'column'}
             justifyContent='center'
             alignItems={'flex-start'}
-            minH={['80vh', '90vh']}>
+            h='90vh'>
             <Fade cascade={true} direction='up' duration={500}>
                 <Box ml={2}>
                     <Heading
@@ -47,7 +47,7 @@ const Hero = () => {
                     my={6}
                     maxW={['80%', '70%', '60%', '50%']}
                     lineHeight={1.5}
-                    fontSize={['sm', 'md', 'lg']}
+                    fontSize={['md', 'lg']}
                     color={['gray.300', 'gray.400', 'gray.400']}
                     letterSpacing={1.1}
                     fontWeight={'light'}>
@@ -69,6 +69,11 @@ const Hero = () => {
                         fontWeight={'normal'}
                         variant={'outline'}
                         fontFamily={'mono'}
+                        boxShadow={'rgba(132, 59, 206, 0.15) 0px 8px 32px 10px'}
+                        _hover={{
+                            boxShadow:
+                                'rgba(152, 67, 237, 0.501) 0px 8px 32px 10px',
+                        }}
                         borderColor={ACCENT_COLOR}
                         color={ACCENT_COLOR}>
                         Get in touch!

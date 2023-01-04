@@ -16,15 +16,17 @@ const SectionHeading: FC<SectionHeadingProps> = ({
             color={'gray.300'}
             fontWeight='semibold'
             fontSize={['2xl', '3xl', '4xl']}
-            my={['3', '4']}
+            mx={0}
+            my={['0', '2', '3', '4']}
             _after={{
                 content: '""',
                 display: 'inline-block',
                 position: 'relative',
                 top: '-.7rem',
-                width: '40%',
+                width: '30%',
                 height: '1px',
                 ml: '1rem',
+
                 backgroundColor: 'gray.700',
             }}>
             <Text

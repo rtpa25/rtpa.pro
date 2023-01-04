@@ -1,14 +1,7 @@
-import {
-    Box,
-    Flex,
-    Heading,
-    Image,
-    Link,
-    Text,
-    UnorderedList,
-} from '@chakra-ui/react';
+import { Box, Flex, Image, Link, Text, UnorderedList } from '@chakra-ui/react';
 import { ACCENT_COLOR } from '../../styles/consts';
 import SectionHeading from '../misc/section-heading';
+import SectionWrapper from '../misc/section-wrapper';
 import SkillListItem from './skill';
 
 const About = () => {
@@ -26,12 +19,7 @@ const About = () => {
     ];
 
     return (
-        <Flex
-            flexDir={'column'}
-            justifyContent='center'
-            minH={'100vh'}
-            maxW={['90%', '80%', '70%', '60%']}
-            mx={'auto'}>
+        <SectionWrapper>
             <Box my={10}>
                 <SectionHeading
                     sectionHeadingText={'About Me'}
@@ -113,17 +101,17 @@ const About = () => {
                     </UnorderedList>
                 </Box>
                 <Box
-                    flex={1}
-                    ml={4}
-                    mt={6}
+                    ml={[0, 0, 0, 4]}
+                    mt={[10, 10, 10, 5]}
                     h={'fit-content'}
+                    w={['full', 'full', 'full', '40%']}
                     rounded={'lg'}
                     bgColor={ACCENT_COLOR}>
                     <Image
                         opacity={0.8}
-                        width={'100%'}
+                        width={['100%']}
                         objectFit={'cover'}
-                        height={'sm'}
+                        height={['xs', 'xs', 'sm', 'sm']}
                         transition={'all 0.2s ease-in-out'}
                         _hover={{ opacity: 1 }}
                         rounded={'lg'}
@@ -132,7 +120,7 @@ const About = () => {
                     />
                 </Box>
             </Flex>
-        </Flex>
+        </SectionWrapper>
     );
 };
 
