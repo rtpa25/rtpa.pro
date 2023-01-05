@@ -3,3 +3,5 @@ export { default as AboutSection } from './about-section';
 export { default as ExperienceSection } from './experience-section';
 export { default as WorkSection } from './work-section';
 export { default as OlderWorkSection } from './older-works-section';
+export { default as EducationSection } from './education-section';
+export { default as ContactFooterSection } from './contact-footer-section';

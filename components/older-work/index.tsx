@@ -30,6 +30,7 @@ const OlderWork = () => {
                 />
             </Box>
             <SimpleGrid
+                mb={40}
                 spacing={'16'}
                 templateColumns='repeat(auto-fill, minmax(300px, 1fr))'>
                 {oldProjects.map((oldProject) => (
