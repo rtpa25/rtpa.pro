@@ -17,13 +17,19 @@ const ProjectTechList: FC<ProjectTechListProps> = ({
         ? ['flex', 'flex', 'flex', 'flex', 'none']
         : ['none', 'none', 'none', 'none', 'flex'];
 
+    const justifyContent = isInsideProjectCard
+        ? 'flex-start'
+        : isOdd
+        ? 'flex-end'
+        : 'flex-start';
+
     return (
         <UnorderedList
             listStyleType='none'
             mt={4}
             ml={0}
             w={'full'}
-            justifyContent={`${isOdd ? 'flex-end' : 'flex-start'}`}
+            justifyContent={justifyContent}
             display={display}
             flexWrap={'wrap'}>
             {techList.map((tech) => (

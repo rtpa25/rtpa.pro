@@ -26,7 +26,13 @@ const IndividualProjectCard: FC<IndividualProjectCardProps> = ({
                 `${idx % 2 === 0 ? 'row' : 'row-reverse'}`,
             ]}
             justifyContent={'space-between'}
-            textAlign={`${idx % 2 === 0 ? 'left' : 'right'}`}
+            textAlign={[
+                'left',
+                'left',
+                'left',
+                'left',
+                `${idx % 2 === 0 ? 'left' : 'right'}`,
+            ]}
             alignItems={'flex-start'}
             w='full'
             mb={28}>

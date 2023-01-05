@@ -38,6 +38,7 @@ const Experience = () => {
                                 w='full'
                                 fontFamily={'mono'}>
                                 <OrgListButton
+                                    isSelected={orgName === selectedOrgName}
                                     orgName={orgName}
                                     clickHandler={orgButtonClickHandler}
                                 />

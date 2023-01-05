@@ -39,4 +39,42 @@ export const projects: Project[] = [
         ],
         website: '',
     },
+    {
+        name: 'DevFolio',
+        description:
+            'A web app that allows developers to build their own portfolio, without putting extra effort of designing and building it from scratch. I got the idea from building my portfolio and realizing how time consuming it is and after getting the same feedback from most of my friends who are applying for internships, I wanted to build a portfolio generator that is easy to use and looks good.',
+        github: '',
+        videoId: 'n-J3OYjjAJo',
+        technologies: [
+            'NextJS',
+            'Typescript',
+            'ChakraUI',
+            'MongoDB',
+            'NodeJS',
+            'ExpressJS',
+            'Nats-Streaming-Server',
+            'Docker',
+            'Kubernetes',
+        ],
+        website: '',
+    },
+    {
+        name: 'CodePlay',
+        description:
+            'A web app that allows developers to build their own portfolio, without putting extra effort of designing and building it from scratch. I got the idea from building my portfolio and realizing how time consuming it is and after getting the same feedback from most of my friends who are applying for internships, I wanted to build a portfolio generator that is easy to use and looks good.',
+        github: '',
+        videoId: 'L_s4wph_jE0',
+        technologies: [
+            'NextJS',
+            'Typescript',
+            'ChakraUI',
+            'MongoDB',
+            'NodeJS',
+            'ExpressJS',
+            'Nats-Streaming-Server',
+            'Docker',
+            'Kubernetes',
+        ],
+        website: '',
+    },
 ];
