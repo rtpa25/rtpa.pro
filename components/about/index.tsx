@@ -1,4 +1,5 @@
 import { Box, Flex, Image, Link, Text, UnorderedList } from '@chakra-ui/react';
+import Tilt from 'react-parallax-tilt';
 import { ACCENT_COLOR } from '../../styles/consts';
 import SectionHeading from '../misc/section-heading';
 import SectionWrapper from '../misc/section-wrapper';
@@ -100,24 +101,32 @@ const About = () => {
                         })}
                     </UnorderedList>
                 </Box>
+
                 <Box
                     ml={[0, 0, 0, 4]}
                     mt={[10, 10, 10, 5]}
                     h={'fit-content'}
                     w={['full', 'full', 'full', '40%']}
                     rounded={'lg'}
-                    bgColor={ACCENT_COLOR}>
-                    <Image
-                        opacity={0.8}
-                        width={['100%']}
-                        objectFit={'cover'}
-                        height={['xs', 'xs', 'sm', 'sm']}
-                        transition={'all 0.2s ease-in-out'}
-                        _hover={{ opacity: 1 }}
-                        rounded={'lg'}
-                        alt='ronit'
-                        src='ronit.jpg'
-                    />
+                    bgColor={ACCENT_COLOR}
+                    _hover={{ bgColor: 'transparent' }}>
+                    <Tilt
+                        glareEnable={true}
+                        glareMaxOpacity={0.9}
+                        glareColor='black'
+                        glarePosition='all'>
+                        <Image
+                            opacity={0.8}
+                            width={['100%']}
+                            objectFit={'cover'}
+                            height={['xs', 'xs', 'sm', 'sm']}
+                            transition={'all 0.2s ease-in-out'}
+                            _hover={{ opacity: 1 }}
+                            rounded={'lg'}
+                            alt='ronit'
+                            src='ronit.jpg'
+                        />
+                    </Tilt>
                 </Box>
             </Flex>
         </SectionWrapper>

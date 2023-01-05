@@ -11,7 +11,10 @@ import {
     UnorderedList,
 } from '@chakra-ui/react';
 import { FC } from 'react';
+import { navButtons } from '../../data/nav-buttons-data';
 import { ACCENT_COLOR } from '../../styles/consts';
+import { scroller } from 'react-scroll';
+import { NavButton } from '../../types/nav-button';
 
 interface SideAppBarDrawerProps {
     isOpen: boolean;
@@ -19,6 +22,15 @@ interface SideAppBarDrawerProps {
 }
 
 const SideAppBarDrawer: FC<SideAppBarDrawerProps> = ({ isOpen, onClose }) => {
+    const navigationHandler = (scrollTo: NavButton['to']) => {
+        onClose();
+        scroller.scrollTo(scrollTo, {
+            duration: 1000,
+            delay: 0,
+            smooth: 'easeInOutQuart',
+        });
+    };
+
     return (
         <Drawer onClose={onClose} isOpen={isOpen} size={'sm'}>
             <DrawerOverlay />
@@ -31,95 +43,28 @@ const SideAppBarDrawer: FC<SideAppBarDrawerProps> = ({ isOpen, onClose }) => {
                     alignItems={'center'}
                     textAlign={'center'}>
                     <UnorderedList listStyleType={'none'} fontFamily='mono'>
-                        <ListItem my={8}>
-                            <Stack spacing={1}>
-                                <Text color={ACCENT_COLOR}>01.</Text>
-                                <Button
-                                    variant={'link'}
-                                    fontSize={'xl'}
-                                    _hover={{
-                                        bgColor: 'inherit',
-                                        color: ACCENT_COLOR,
-                                        textDecoration: 'underline',
-                                    }}
-                                    fontWeight={'normal'}
-                                    color={'gray.300'}>
-                                    About
-                                </Button>
-                            </Stack>
-                        </ListItem>
-
-                        <ListItem my={8}>
-                            <Stack spacing={1}>
-                                <Text color={ACCENT_COLOR}>02.</Text>
-                                <Button
-                                    variant={'link'}
-                                    fontSize={'xl'}
-                                    _hover={{
-                                        bgColor: 'inherit',
-                                        color: ACCENT_COLOR,
-                                        textDecoration: 'underline',
-                                    }}
-                                    fontWeight={'normal'}
-                                    color={'gray.300'}>
-                                    Experience
-                                </Button>
-                            </Stack>
-                        </ListItem>
-
-                        <ListItem my={8}>
-                            <Stack spacing={1}>
-                                <Text color={ACCENT_COLOR}>03.</Text>
-                                <Button
-                                    variant={'link'}
-                                    fontSize={'xl'}
-                                    _hover={{
-                                        bgColor: 'inherit',
-                                        color: ACCENT_COLOR,
-                                        textDecoration: 'underline',
-                                    }}
-                                    fontWeight={'normal'}
-                                    color={'gray.300'}>
-                                    Projects
-                                </Button>
-                            </Stack>
-                        </ListItem>
-
-                        <ListItem my={8}>
-                            <Stack spacing={1}>
-                                <Text color={ACCENT_COLOR}>04.</Text>
-                                <Button
-                                    variant={'link'}
-                                    fontSize={'xl'}
-                                    _hover={{
-                                        bgColor: 'inherit',
-                                        color: ACCENT_COLOR,
-                                        textDecoration: 'underline',
-                                    }}
-                                    fontWeight={'normal'}
-                                    color={'gray.300'}>
-                                    Education
-                                </Button>
-                            </Stack>
-                        </ListItem>
-
-                        <ListItem my={8}>
-                            <Stack spacing={1}>
-                                <Text color={ACCENT_COLOR}>05.</Text>
-                                <Button
-                                    variant={'link'}
-                                    fontSize={'xl'}
-                                    _hover={{
-                                        bgColor: 'inherit',
-                                        color: ACCENT_COLOR,
-                                        textDecoration: 'underline',
-                                    }}
-                                    fontWeight={'normal'}
-                                    color={'gray.300'}>
-                                    Contact
-                                </Button>
-                            </Stack>
-                        </ListItem>
+                        {navButtons.map((nav) => (
+                            <ListItem my={8} key={nav.btnText}>
+                                <Stack spacing={1}>
+                                    <Text color={ACCENT_COLOR}>01.</Text>
+                                    <Button
+                                        onClick={() =>
+                                            navigationHandler(nav.to)
+                                        }
+                                        variant={'link'}
+                                        fontSize={'xl'}
+                                        _hover={{
+                                            bgColor: 'inherit',
+                                            color: ACCENT_COLOR,
+                                            textDecoration: 'underline',
+                                        }}
+                                        fontWeight={'normal'}
+                                        color={'gray.300'}>
+                                        {nav.btnText}
+                                    </Button>
+                                </Stack>
+                            </ListItem>
+                        ))}
                     </UnorderedList>
                     <Button
                         mt={10}

@@ -2886,6 +2886,11 @@ react-lite-youtube-embed@^2.3.52:
   resolved "https://registry.yarnpkg.com/react-lite-youtube-embed/-/react-lite-youtube-embed-2.3.52.tgz#7f8125a03e7a940745b63d11abd6821ffe1babe5"
   integrity sha512-G010PvCavA4EqL8mZ/Sv9XXiHnjMfONW+lmNeCRnSEPluPdptv2lZ0cNlngrj7K9j7luc8pbpyrmNpKbD9VMmw==
 
+react-parallax-tilt@^1.7.82:
+  version "1.7.82"
+  resolved "https://registry.yarnpkg.com/react-parallax-tilt/-/react-parallax-tilt-1.7.82.tgz#21d786a47478c0c20992b863a597d4c8deafc257"
+  integrity sha512-P9G2PswPLUypOKJcuatB+f8cH9CeG6wzDFWSX3MiUKoXFDWscQE77FItot1pDLpxqhzoqeY9/dEzn27qfo7Xag==
+
 react-remove-scroll-bar@^2.3.3:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/react-remove-scroll-bar/-/react-remove-scroll-bar-2.3.4.tgz#53e272d7a5cb8242990c7f144c44d8bd8ab5afd9"

@@ -7,25 +7,13 @@ import {
     useDisclosure,
 } from '@chakra-ui/react';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { navButtons } from '../../data/nav-buttons-data';
 import { ACCENT_COLOR } from '../../styles/consts';
 import AppBarNavButton from './app-bar-nav-button';
 import SideAppBarDrawer from './side-app-bar-drawer';
 
-interface NavButton {
-    to: string;
-    btnText: string;
-}
-
 const AppBar = () => {
     const { isOpen, onClose, onOpen } = useDisclosure();
-
-    const navButtons: NavButton[] = [
-        { to: 'about', btnText: 'About' },
-        { to: 'experience', btnText: 'Experience' },
-        { to: 'work', btnText: 'Work' },
-        { to: 'education', btnText: 'Education' },
-        { to: 'contact', btnText: 'Contact' },
-    ];
 
     return (
         <Flex
