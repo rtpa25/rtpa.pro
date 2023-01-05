@@ -10,11 +10,13 @@ import ProjectTechList from './project-tech-list';
 interface IndividualProjectCardProps {
     project: Project;
     idx: number;
+    isLast: boolean;
 }
 
 const IndividualProjectCard: FC<IndividualProjectCardProps> = ({
     project,
     idx,
+    isLast,
 }) => {
     return (
         <Flex
@@ -35,7 +37,7 @@ const IndividualProjectCard: FC<IndividualProjectCardProps> = ({
             ]}
             alignItems={'flex-start'}
             w='full'
-            mb={28}>
+            mb={isLast ? 20 : 28}>
             <Box w={['full', 'full', 'full', 'full', '50%']}>
                 <Stack
                     spacing={3}

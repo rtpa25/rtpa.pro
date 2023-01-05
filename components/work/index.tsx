@@ -16,6 +16,7 @@ const Work = () => {
             <Box>
                 {projects.map((project, idx) => (
                     <IndividualProjectCard
+                        isLast={idx === projects.length - 1}
                         project={project}
                         idx={idx}
                         key={project.name}

@@ -6,6 +6,7 @@ import {
     HeroSection,
     ExperienceSection,
     WorkSection,
+    OlderWorkSection,
 } from '../sections';
 import { GRADIENT_ACCENT_COLOR } from '../styles/consts';
 
@@ -18,6 +19,7 @@ const Home = () => {
             <AboutSection />
             <ExperienceSection />
             <WorkSection />
+            <OlderWorkSection />
             <SocialLinks />
             <EmailSideLink />
         </Box>
