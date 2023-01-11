@@ -56,7 +56,7 @@ const OrgDataCard: FC<OrgDataCardProps> = ({
                         <ListItem
                             key={work}
                             display={'flex'}
-                            justifyContent='center'
+                            justifyContent='flex-start'
                             alignItems={'flex-start'}>
                             <ListIcon
                                 mt={1.5}
@@ -65,7 +65,7 @@ const OrgDataCard: FC<OrgDataCardProps> = ({
                                 as={AiFillCaretRight}
                                 color={ACCENT_COLOR}
                             />
-                            {work}.
+                            {work}
                         </ListItem>
                     ))}
                 </UnorderedList>
