@@ -1,7 +1,7 @@
 import { Box, Link } from '@chakra-ui/react';
-import { FC, useEffect } from 'react';
+import { FC } from 'react';
 import { IconType } from 'react-icons';
-import { FiLinkedin, FiTwitter, FiGithub } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
 import { ACCENT_COLOR } from '../styles/consts';
 
 interface SocialIconLinkProps {
