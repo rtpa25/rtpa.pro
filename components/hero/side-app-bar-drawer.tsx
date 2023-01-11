@@ -43,10 +43,12 @@ const SideAppBarDrawer: FC<SideAppBarDrawerProps> = ({ isOpen, onClose }) => {
                     alignItems={'center'}
                     textAlign={'center'}>
                     <UnorderedList listStyleType={'none'} fontFamily='mono'>
-                        {navButtons.map((nav) => (
+                        {navButtons.map((nav, idx) => (
                             <ListItem my={8} key={nav.btnText}>
                                 <Stack spacing={1}>
-                                    <Text color={ACCENT_COLOR}>01.</Text>
+                                    <Text color={ACCENT_COLOR}>
+                                        0{idx + 1}.
+                                    </Text>
                                     <Button
                                         onClick={() =>
                                             navigationHandler(nav.to)
