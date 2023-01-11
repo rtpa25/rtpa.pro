@@ -30,31 +30,34 @@ const ContactFooter = () => {
                     ring a bell, 👇
                 </Text>
                 <Box mx={'auto'} w='fit-content' mt={10}>
-                    <Tilt
-                        tiltEnable={false}
-                        glareEnable={true}
-                        glareMaxOpacity={0.5}
-                        glareColor={ACCENT_COLOR}
-                        glarePosition='all'>
-                        <Button
-                            px='10'
-                            py='7'
-                            fontFamily={'mono'}
-                            boxShadow={
-                                'rgba(132, 59, 206, 0.15) 0px 8px 32px 10px'
-                            }
-                            _hover={{
-                                boxShadow:
-                                    'rgba(152, 67, 237, 0.501) 0px 8px 32px 10px',
-                            }}
-                            borderColor={ACCENT_COLOR}
-                            color={ACCENT_COLOR}
-                            variant='outline'>
-                            <a href={`mailto:pandaronit25@gmail.com`}>
+                    <a
+                        href={`mailto:pandaronit25@gmail.com`}
+                        target='_blank'
+                        rel='noreferrer'>
+                        <Tilt
+                            tiltEnable={false}
+                            glareEnable={true}
+                            glareMaxOpacity={0.5}
+                            glareColor={ACCENT_COLOR}
+                            glarePosition='all'>
+                            <Button
+                                px='10'
+                                py='7'
+                                fontFamily={'mono'}
+                                boxShadow={
+                                    'rgba(132, 59, 206, 0.15) 0px 8px 32px 10px'
+                                }
+                                _hover={{
+                                    boxShadow:
+                                        'rgba(152, 67, 237, 0.501) 0px 8px 32px 10px',
+                                }}
+                                borderColor={ACCENT_COLOR}
+                                color={ACCENT_COLOR}
+                                variant='outline'>
                                 Say Hello 👋
-                            </a>
-                        </Button>
-                    </Tilt>
+                            </Button>
+                        </Tilt>
+                    </a>
                 </Box>
             </Box>
         </SectionWrapper>

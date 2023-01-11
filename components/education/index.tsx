@@ -27,27 +27,27 @@ const Education = () => {
                     />
                 ))}
             </SimpleGrid>
-            <Button
-                mx='auto'
-                mt={'20'}
-                px='20'
-                borderColor={ACCENT_COLOR}
-                color={ACCENT_COLOR}
-                variant='outline'>
+            <Box mx='auto' mt={'20'}>
                 <a
                     href='https://www.linkedin.com/in/rtpa25/details/certifications/'
                     target={'_blank'}
                     rel='noreferrer'>
-                    <Flex
-                        justifyContent={'space-between'}
-                        alignItems='flex-end'>
-                        <Text mr={2}>Show all 12 certificates </Text>
-                        <Box>
-                            <BsArrowRight />
-                        </Box>
-                    </Flex>
+                    <Button
+                        px='20'
+                        borderColor={ACCENT_COLOR}
+                        color={ACCENT_COLOR}
+                        variant='outline'>
+                        <Flex
+                            justifyContent={'space-between'}
+                            alignItems='flex-end'>
+                            <Text mr={2}>Show all 12 certificates </Text>
+                            <Box>
+                                <BsArrowRight />
+                            </Box>
+                        </Flex>
+                    </Button>
                 </a>
-            </Button>
+            </Box>
         </SectionWrapper>
     );
 };

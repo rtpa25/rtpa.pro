@@ -80,13 +80,15 @@ const AppBar = () => {
                     }}
                     color={ACCENT_COLOR}
                 />
-                <Button
-                    variant={'outline'}
-                    ml={4}
-                    borderColor={ACCENT_COLOR}
-                    color={ACCENT_COLOR}>
-                    Resume
-                </Button>
+                <a href='/resume.pdf' target='_blank' rel='noreferrer'>
+                    <Button
+                        variant={'outline'}
+                        ml={4}
+                        borderColor={ACCENT_COLOR}
+                        color={ACCENT_COLOR}>
+                        Resume
+                    </Button>
+                </a>
             </Flex>
 
             <IconButton

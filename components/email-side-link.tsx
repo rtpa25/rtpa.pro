@@ -33,7 +33,7 @@ const EmailSideLink = () => {
                             color: 'gray.200',
                         }}>
                         <Link
-                            href={'https://github.com/rtpa25'}
+                            href={`mailto:pandaronit25@gmail.com`}
                             target='_blank'
                             style={{
                                 writingMode: 'vertical-rl',

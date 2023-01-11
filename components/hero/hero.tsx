@@ -63,32 +63,35 @@ const Hero = () => {
                     </Text>
                 </Box>
                 <Box my={4}>
-                    <Tilt
-                        tiltEnable={false}
-                        glareEnable={true}
-                        glareMaxOpacity={0.8}
-                        glareColor={ACCENT_COLOR}
-                        glarePosition='all'>
-                        <Button
-                            fontSize={['lg', 'lg', 'xl', 'xl']}
-                            p={[5, 6, 7, 8]}
-                            fontWeight={'normal'}
-                            variant={'outline'}
-                            fontFamily={'mono'}
-                            boxShadow={
-                                'rgba(132, 59, 206, 0.15) 0px 8px 32px 10px'
-                            }
-                            _hover={{
-                                boxShadow:
-                                    'rgba(152, 67, 237, 0.501) 0px 8px 32px 10px',
-                            }}
-                            borderColor={ACCENT_COLOR}
-                            color={ACCENT_COLOR}>
-                            <a href={`mailto:pandaronit25@gmail.com`}>
+                    <a
+                        href={`mailto:pandaronit25@gmail.com`}
+                        target='_blank'
+                        rel='noreferrer'>
+                        <Tilt
+                            tiltEnable={false}
+                            glareEnable={true}
+                            glareMaxOpacity={0.8}
+                            glareColor={ACCENT_COLOR}
+                            glarePosition='all'>
+                            <Button
+                                fontSize={['lg', 'lg', 'xl', 'xl']}
+                                p={[5, 6, 7, 8]}
+                                fontWeight={'normal'}
+                                variant={'outline'}
+                                fontFamily={'mono'}
+                                boxShadow={
+                                    'rgba(132, 59, 206, 0.15) 0px 8px 32px 10px'
+                                }
+                                _hover={{
+                                    boxShadow:
+                                        'rgba(152, 67, 237, 0.501) 0px 8px 32px 10px',
+                                }}
+                                borderColor={ACCENT_COLOR}
+                                color={ACCENT_COLOR}>
                                 Get in touch!
-                            </a>
-                        </Button>
-                    </Tilt>
+                            </Button>
+                        </Tilt>
+                    </a>
                 </Box>
             </Fade>
         </Flex>

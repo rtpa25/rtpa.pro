@@ -8,10 +8,10 @@ import {
     Text,
     UnorderedList,
 } from '@chakra-ui/react';
+import { FC } from 'react';
 import { AiFillCaretRight } from 'react-icons/ai';
 import { ACCENT_COLOR } from '../../styles/consts';
-import { FC } from 'react';
-import { Org, OrgData } from '../../types/org';
+import { OrgData } from '../../types/org';
 
 interface OrgDataCardProps extends OrgData {}
 
