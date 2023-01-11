@@ -6,7 +6,7 @@ export const projects: Project[] = [
         description:
             'A social media app on which you can create profile, make friends via friend requests, create posts, like and comment on them.This app is implemented using micro services architecture where each service is deployed in a separate docker container and all the containers are managed by kubernetes.',
         github: 'https://github.com/rtpa25/MicroInsta',
-        videoId: 'Z5iWr6Srsj8',
+        videoId: '6zU-NIniW1U',
         technologies: [
             'NextJS',
             'Typescript',
@@ -30,7 +30,7 @@ export const projects: Project[] = [
         description:
             'A web app that allows developers to build their own portfolio, without putting extra effort of designing and building it from scratch. Add about yourself, your projects, your skills, your education and your experience and get a portfolio that looks good with a sharable link',
         github: 'https://github.com/rtpa25/portfolio-gen-web',
-        videoId: 'FLk_SpV0vNI',
+        videoId: 'bkAFyzbUSjU',
         technologies: [
             'NextJS',
             'ChakraUI',
@@ -75,7 +75,7 @@ export const projects: Project[] = [
         description:
             'Learnify is a web app that converts distracting youtube playlist into an interactive Udemy like course hence resulting in less distraction and increased productivity. Built with the help of YouTube API, some of the key features are note taking feature with timestamps, progress indicator and the fact that there are no form of distracting popups or non-educational videos.',
         github: 'https://github.com/rtpa25/learnify-client',
-        videoId: 'L_s4wph_jE0',
+        videoId: 'rkh9Q_L64s8',
         technologies: [
             'NextJS',
             'TypeScript',
