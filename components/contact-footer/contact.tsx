@@ -1,6 +1,7 @@
 import { Box, Button, Heading, Text } from '@chakra-ui/react';
 import { ACCENT_COLOR } from '../../styles/consts';
 import SectionWrapper from '../misc/section-wrapper';
+import Tilt from 'react-parallax-tilt';
 
 const ContactFooter = () => {
     return (
@@ -28,22 +29,33 @@ const ContactFooter = () => {
                     contribute to teams that want to make a difference. Does it
                     ring a bell, 👇
                 </Text>
-                <Button
-                    mx='auto'
-                    mt={'10'}
-                    px='10'
-                    py='7'
-                    fontFamily={'mono'}
-                    boxShadow={'rgba(132, 59, 206, 0.15) 0px 8px 32px 10px'}
-                    _hover={{
-                        boxShadow:
-                            'rgba(152, 67, 237, 0.501) 0px 8px 32px 10px',
-                    }}
-                    borderColor={ACCENT_COLOR}
-                    color={ACCENT_COLOR}
-                    variant='outline'>
-                    Say Hello
-                </Button>
+                <Box mx={'auto'} w='fit-content' mt={10}>
+                    <Tilt
+                        tiltEnable={false}
+                        glareEnable={true}
+                        glareMaxOpacity={0.5}
+                        glareColor={ACCENT_COLOR}
+                        glarePosition='all'>
+                        <Button
+                            px='10'
+                            py='7'
+                            fontFamily={'mono'}
+                            boxShadow={
+                                'rgba(132, 59, 206, 0.15) 0px 8px 32px 10px'
+                            }
+                            _hover={{
+                                boxShadow:
+                                    'rgba(152, 67, 237, 0.501) 0px 8px 32px 10px',
+                            }}
+                            borderColor={ACCENT_COLOR}
+                            color={ACCENT_COLOR}
+                            variant='outline'>
+                            <a href={`mailto:pandaronit25@gmail.com`}>
+                                Say Hello 👋
+                            </a>
+                        </Button>
+                    </Tilt>
+                </Box>
             </Box>
         </SectionWrapper>
     );

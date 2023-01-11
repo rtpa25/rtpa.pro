@@ -1,6 +1,6 @@
 import { Box, Flex, Image, Link, Text, UnorderedList } from '@chakra-ui/react';
 import Tilt from 'react-parallax-tilt';
-import { ACCENT_COLOR } from '../../styles/consts';
+import { ACCENT_COLOR, GRADIENT_ACCENT_COLOR } from '../../styles/consts';
 import SectionHeading from '../misc/section-heading';
 import SectionWrapper from '../misc/section-wrapper';
 import SkillListItem from './skill';
@@ -108,12 +108,13 @@ const About = () => {
                     h={'fit-content'}
                     w={['full', 'full', 'full', '40%']}
                     rounded={'lg'}
+                    mb={'40'}
                     bgColor={ACCENT_COLOR}
                     _hover={{ bgColor: 'transparent' }}>
                     <Tilt
                         glareEnable={true}
                         glareMaxOpacity={0.9}
-                        glareColor='black'
+                        glareColor={'black'}
                         glarePosition='all'>
                         <Image
                             opacity={0.8}

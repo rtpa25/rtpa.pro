@@ -56,7 +56,6 @@ const SideAppBarDrawer: FC<SideAppBarDrawerProps> = ({ isOpen, onClose }) => {
                                         _hover={{
                                             bgColor: 'inherit',
                                             color: ACCENT_COLOR,
-                                            textDecoration: 'underline',
                                         }}
                                         fontWeight={'normal'}
                                         color={'gray.300'}>

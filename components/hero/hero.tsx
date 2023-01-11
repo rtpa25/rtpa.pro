@@ -1,6 +1,7 @@
 import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
 import { Fade } from 'react-awesome-reveal';
 import { ACCENT_COLOR } from '../../styles/consts';
+import Tilt from 'react-parallax-tilt';
 
 const Hero = () => {
     return (
@@ -39,7 +40,7 @@ const Hero = () => {
                         fontWeight={'semibold'}
                         lineHeight={1.2}
                         color='gray.400'>
-                        I build things for the web.
+                        A person who iterates fast.
                     </Heading>
                 </Box>
 
@@ -53,31 +54,41 @@ const Hero = () => {
                     fontWeight={'light'}>
                     <Text>
                         {
-                            "I'm a software engineer based out of India specializing in building full stack web apps. Currently, I'm an looking for an "
-                        }
-                        internship at a{' '}
+                            "I'm a software engineer based out of India specializing in building full stack web apps. Currently, I'm an looking to join a team of passionate people to build products that"
+                        }{' '}
                         <span style={{ color: ACCENT_COLOR }}>
-                            high growth startup
+                            make a difference
                         </span>
                         .
                     </Text>
                 </Box>
                 <Box my={4}>
-                    <Button
-                        fontSize={'xl'}
-                        p={8}
-                        fontWeight={'normal'}
-                        variant={'outline'}
-                        fontFamily={'mono'}
-                        boxShadow={'rgba(132, 59, 206, 0.15) 0px 8px 32px 10px'}
-                        _hover={{
-                            boxShadow:
-                                'rgba(152, 67, 237, 0.501) 0px 8px 32px 10px',
-                        }}
-                        borderColor={ACCENT_COLOR}
-                        color={ACCENT_COLOR}>
-                        Get in touch!
-                    </Button>
+                    <Tilt
+                        tiltEnable={false}
+                        glareEnable={true}
+                        glareMaxOpacity={0.8}
+                        glareColor={ACCENT_COLOR}
+                        glarePosition='all'>
+                        <Button
+                            fontSize={['lg', 'lg', 'xl', 'xl']}
+                            p={[5, 6, 7, 8]}
+                            fontWeight={'normal'}
+                            variant={'outline'}
+                            fontFamily={'mono'}
+                            boxShadow={
+                                'rgba(132, 59, 206, 0.15) 0px 8px 32px 10px'
+                            }
+                            _hover={{
+                                boxShadow:
+                                    'rgba(152, 67, 237, 0.501) 0px 8px 32px 10px',
+                            }}
+                            borderColor={ACCENT_COLOR}
+                            color={ACCENT_COLOR}>
+                            <a href={`mailto:pandaronit25@gmail.com`}>
+                                Get in touch!
+                            </a>
+                        </Button>
+                    </Tilt>
                 </Box>
             </Fade>
         </Flex>

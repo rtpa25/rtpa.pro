@@ -7,22 +7,22 @@ export const certificates: Certificate[] = [
     },
     {
         name: 'react',
-        image: 'micro-services-course-certificate.jpg',
+        image: 'react-course-certificate.jpg',
     },
     {
-        name: 'node',
-        image: 'micro-services-course-certificate.jpg',
+        name: 'tsc',
+        image: 'tsc-course-certificate.jpg',
     },
     {
-        name: 'backend',
-        image: 'micro-services-course-certificate.jpg',
+        name: 'js',
+        image: 'advanced-js-course-certificate.jpg',
     },
     {
-        name: 'devops',
-        image: 'micro-services-course-certificate.jpg',
+        name: 'nest',
+        image: 'nest-course-certificate.jpg',
     },
     {
-        name: 'redux',
-        image: 'micro-services-course-certificate.jpg',
+        name: 'das',
+        image: 'dsa-course-certificate.jpg',
     },
 ];

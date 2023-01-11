@@ -6,7 +6,10 @@ import {
     IconButton,
     useDisclosure,
 } from '@chakra-ui/react';
+import { useState } from 'react';
+import { BsSoundwave } from 'react-icons/bs';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import useSound from 'use-sound';
 import { navButtons } from '../../data/nav-buttons-data';
 import { ACCENT_COLOR } from '../../styles/consts';
 import AppBarNavButton from './app-bar-nav-button';
@@ -14,6 +17,25 @@ import SideAppBarDrawer from './side-app-bar-drawer';
 
 const AppBar = () => {
     const { isOpen, onClose, onOpen } = useDisclosure();
+
+    const [play, { pause, sound }] = useSound('bg-music.mp3', {
+        soundEnabled: true,
+        volume: 0.5,
+        loop: true,
+    });
+
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const toggleMusic = () => {
+        if (isPlaying) {
+            pause();
+            setIsPlaying(false);
+        } else {
+            play();
+            sound.loop = true;
+            setIsPlaying(true);
+        }
+    };
 
     return (
         <Flex
@@ -46,6 +68,18 @@ const AppBar = () => {
                         );
                     })}
                 </ButtonGroup>
+                <IconButton
+                    onClick={toggleMusic}
+                    aria-label='sound'
+                    icon={<BsSoundwave />}
+                    variant={'ghost'}
+                    ml={4}
+                    _hover={{
+                        border: '1px solid',
+                        borderColor: ACCENT_COLOR,
+                    }}
+                    color={ACCENT_COLOR}
+                />
                 <Button
                     variant={'outline'}
                     ml={4}

@@ -24,7 +24,7 @@ const AppBarNavButton: FC<AppBarNavButtonProps> = ({ btnText, idx, to }) => {
                 <Text mx={1} color={ACCENT_COLOR}>
                     0{idx + 1}.{' '}
                 </Text>
-                <Text _hover={{ textDecoration: 'underline' }}>{btnText}</Text>
+                <Text>{btnText}</Text>
             </Button>
         </ReactScrollLink>
     );

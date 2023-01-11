@@ -13,7 +13,7 @@ const Work = () => {
                     sectionHeadingNumber={3}
                 />
             </Box>
-            <Box>
+            <Box mb={40}>
                 {projects.map((project, idx) => (
                     <IndividualProjectCard
                         isLast={idx === projects.length - 1}

@@ -10,7 +10,7 @@ import IndividualCourseCertificate from './individual-certificate';
 const Education = () => {
     return (
         <SectionWrapper variant='wide'>
-            <Box mb={16}>
+            <Box my={16}>
                 <SectionHeading
                     sectionHeadingText={'Online Courses Taken'}
                     sectionHeadingNumber={5}
@@ -41,7 +41,7 @@ const Education = () => {
                     <Flex
                         justifyContent={'space-between'}
                         alignItems='flex-end'>
-                        <Text mr={2}>Show All 12 certificates </Text>
+                        <Text mr={2}>Show all 12 certificates </Text>
                         <Box>
                             <BsArrowRight />
                         </Box>

@@ -1,88 +1,37 @@
 import { Box, ListItem, UnorderedList } from '@chakra-ui/react';
-import Link from 'next/link';
-import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { socialLinks } from '../data/social-links-data';
 import { ACCENT_COLOR } from '../styles/consts';
+import SocialIconLink from './social-icon-link';
 
 const SocialLinks = () => {
     return (
         <Box
-            position={'fixed'}
-            bottom={0}
-            display={['none', 'none', 'block', 'block']}>
+            position={['absolute', 'absolute', 'fixed', 'fixed']}
+            bottom={[10, 10, 0, 0]}
+            w={['full', 'full', 'auto', 'auto']}
+            display={['flex', 'flex', 'block', 'block']}>
             <UnorderedList
-                ml={12}
+                w={'full'}
+                ml={[0, 0, 12, 12]}
+                display={['flex', 'flex', 'block', 'block']}
+                justifyContent={'center'}
+                alignItems={'center'}
                 listStyleType={'none'}
                 _after={{
                     content: '""',
-                    display: 'block',
+                    display: ['none', 'none', 'block', 'block'],
+                    position: 'relative',
+                    right: '36%',
                     width: '.8px',
                     height: '6rem',
                     margin: '0 auto',
                     bgColor: ACCENT_COLOR,
                 }}>
-                <ListItem my={10}>
-                    <Box
-                        w={6}
-                        h={6}
-                        transitionDuration={'0.2s'}
-                        transitionProperty={'all'}
-                        transitionTimingFunction={'ease-in'}
-                        transform={'auto'}
-                        color={ACCENT_COLOR}
-                        _hover={{
-                            translateY: -2,
-                            color: ACCENT_COLOR,
-                        }}>
-                        <Link
-                            href={'https://github.com/rtpa25'}
-                            target='_blank'
-                            rel='noreferrer'>
-                            <FiGithub size={'100%'} />
-                        </Link>
-                    </Box>
-                </ListItem>
-                <ListItem my={10}>
-                    <Box
-                        w={6}
-                        h={6}
-                        color={ACCENT_COLOR}
-                        transitionDuration={'0.2s'}
-                        transitionProperty={'all'}
-                        transitionTimingFunction={'ease-in'}
-                        transform={'auto'}
-                        _hover={{
-                            translateY: -2,
-                            color: ACCENT_COLOR,
-                        }}>
-                        <Link
-                            href={'https://github.com/rtpa25'}
-                            target='_blank'
-                            rel='noreferrer'>
-                            <FiLinkedin size={'100%'} />
-                        </Link>
-                    </Box>
-                </ListItem>
-                <ListItem my={10}>
-                    <Box
-                        w={6}
-                        h={6}
-                        color={ACCENT_COLOR}
-                        transitionDuration={'0.2s'}
-                        transitionProperty={'all'}
-                        transitionTimingFunction={'ease-in'}
-                        transform={'auto'}
-                        _hover={{
-                            translateY: -2,
-                            color: ACCENT_COLOR,
-                        }}>
-                        <Link
-                            href={'https://github.com/rtpa25'}
-                            target='_blank'
-                            rel='noreferrer'>
-                            <FiTwitter size={'100%'} />
-                        </Link>
-                    </Box>
-                </ListItem>
+                {socialLinks.map((link) => (
+                    <ListItem my={10} mx={[10, 10, 0, 0]} key={link.address}>
+                        <SocialIconLink href={link.address} type={link.type} />
+                    </ListItem>
+                ))}
             </UnorderedList>
         </Box>
     );

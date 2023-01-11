@@ -3,12 +3,12 @@ import EmailSideLink from '../components/email-side-link';
 import SocialLinks from '../components/social-links';
 import {
     AboutSection,
-    HeroSection,
-    ExperienceSection,
-    WorkSection,
-    OlderWorkSection,
-    EducationSection,
     ContactFooterSection,
+    EducationSection,
+    ExperienceSection,
+    HeroSection,
+    OlderWorkSection,
+    WorkSection,
 } from '../sections';
 import { GRADIENT_ACCENT_COLOR } from '../styles/consts';
 

@@ -22,9 +22,7 @@ const Experience = () => {
                     sectionHeadingNumber={2}
                 />
             </Box>
-            <Flex
-                flexDir={['column', 'column', 'row', 'row']}
-                mb={[40, 30, 20, 10]}>
+            <Flex flexDir={['column', 'column', 'row', 'row']} mb={40}>
                 <Box flex={1}>
                     <UnorderedList
                         listStyleType={'none'}
