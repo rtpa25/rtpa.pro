@@ -55,7 +55,7 @@ export const projects: Project[] = [
         description:
             'A NPM package that lets you make coding cheat sheets and notebooks all from your browser. Code bundling and transpiling on the browser with es-build makes code-play editors blazing fast. CodePlay is a collection of 3 packages a CLI, A local-Client and A local-Server which is an express server which serves the client and stores the users code in the users machine',
         github: 'https://github.com/rtpa25/code-play',
-        videoId: 'n-J3OYjjAJo',
+        videoId: 'dWgIhI5jauk',
         technologies: [
             'ReactJS',
             'TypeScript',
