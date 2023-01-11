@@ -21,20 +21,22 @@ const ProjectButtonGroup: FC<ProjectButtonGroupProps> = ({
 
     return (
         <ButtonGroup my={2} variant='outline' spacing={4} display={display}>
-            <IconButton
-                _hover={{ color: ACCENT_COLOR }}
-                fontSize='lg'
-                aria-label='github'
-                icon={<FiGithub />}>
-                <a href={github} target='_blank' rel='noopener noreferrer' />
-            </IconButton>
-            <IconButton
-                _hover={{ color: ACCENT_COLOR }}
-                fontSize='lg'
-                aria-label='github'
-                icon={<BiLinkExternal />}>
-                <a href={website} target='_blank' rel='noopener noreferrer' />
-            </IconButton>
+            <a href={github} target='_blank' rel='noopener noreferrer'>
+                <IconButton
+                    _hover={{ color: ACCENT_COLOR }}
+                    fontSize='lg'
+                    aria-label='github'>
+                    <FiGithub />
+                </IconButton>
+            </a>
+            <a href={website} target='_blank' rel='noopener noreferrer'>
+                <IconButton
+                    _hover={{ color: ACCENT_COLOR }}
+                    fontSize='lg'
+                    aria-label='github'>
+                    <BiLinkExternal />
+                </IconButton>
+            </a>
         </ButtonGroup>
     );
 };
