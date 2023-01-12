@@ -26,7 +26,7 @@ const SEO = () => {
             <meta property='og:url' content='https://ronit.pro' />
             <meta property='og:type' content='personal portfolio' />
             <meta property='og:title' content='Ronit Panda' />
-            <meta name='twitter:card' content='summary' />
+            <meta name='twitter:card' content='summary_large_image' />
             <meta
                 property='og:description'
                 content="I'm a software engineer based out of India specializing in building full stack web apps. Currently, I'm an looking to join a team of passionate people to build products that make a difference."
