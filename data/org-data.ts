@@ -10,7 +10,7 @@ export const orgData: {
         },
         joiningMonth: 'Jan 2022',
         leavingMonth: 'Jun 2022',
-        position: 'Software Engineer Intern',
+        position: 'Software Engineer',
         work: [
             'Extensively worked on the golang SDK of SuperTokens. This is one of the many backend SDKs used by SuperTokens to interact with the core which does all the heavy lifting of session management.',
             'Build various dummy implementations of the SuperTokens SDK in golang with go-fiber, grpc. And also built an implementation with svelte using the SuperTokens-React-SDK.',
