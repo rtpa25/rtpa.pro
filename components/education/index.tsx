@@ -1,6 +1,5 @@
 import { Box, Button, Flex, SimpleGrid, Text } from '@chakra-ui/react';
 import { BsArrowRight } from 'react-icons/bs';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { certificates } from '../../data/certificates-data';
 import { ACCENT_COLOR } from '../../styles/consts';
 import SectionHeading from '../misc/section-heading';
