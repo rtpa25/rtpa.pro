@@ -12,7 +12,8 @@ const Education = () => {
             <Box my={16}>
                 <SectionHeading
                     sectionHeadingText={'Online Courses Taken'}
-                    sectionHeadingNumber={5}
+                    sectionHeadingNumber={4}
+                    showNumber={true}
                 />
             </Box>
             <SimpleGrid

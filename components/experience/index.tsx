@@ -20,6 +20,7 @@ const Experience = () => {
                 <SectionHeading
                     sectionHeadingText={'Past Experiences'}
                     sectionHeadingNumber={2}
+                    showNumber={true}
                 />
             </Box>
             <Flex flexDir={['column', 'column', 'row', 'row']} mb={40}>

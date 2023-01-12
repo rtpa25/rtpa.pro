@@ -5,11 +5,13 @@ import { ACCENT_COLOR } from '../../styles/consts';
 interface SectionHeadingProps {
     sectionHeadingText: string;
     sectionHeadingNumber: number;
+    showNumber: boolean;
 }
 
 const SectionHeading: FC<SectionHeadingProps> = ({
     sectionHeadingNumber,
     sectionHeadingText,
+    showNumber,
 }) => {
     return (
         <Heading
@@ -33,7 +35,7 @@ const SectionHeading: FC<SectionHeadingProps> = ({
                 fontSize={['2xl', '3xl']}
                 color={ACCENT_COLOR}
                 mr={1}
-                display={'inline'}
+                display={showNumber === true ? 'inline' : 'none'}
                 fontFamily='mono'>
                 0{sectionHeadingNumber}.{' '}
             </Text>

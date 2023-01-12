@@ -11,6 +11,7 @@ const Work = () => {
                 <SectionHeading
                     sectionHeadingText={'Recent Projects'}
                     sectionHeadingNumber={3}
+                    showNumber={true}
                 />
             </Box>
             <Box mb={40}>

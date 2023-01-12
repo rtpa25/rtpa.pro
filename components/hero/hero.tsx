@@ -13,11 +13,11 @@ const Hero = () => {
             alignItems={'flex-start'}
             h='90vh'>
             <Fade cascade={true} direction='up' duration={500}>
-                <Box ml={2}>
+                <Box ml={[1, 1, 2, 2]}>
                     <Heading
                         fontFamily={'mono'}
                         color={ACCENT_COLOR}
-                        fontSize='xl'
+                        fontSize={['md', 'md', 'lg', 'xl']}
                         fontWeight={'light'}
                         lineHeight={1.2}>
                         Hi, my name is
@@ -25,7 +25,7 @@ const Hero = () => {
                 </Box>
                 <Box>
                     <Heading
-                        fontSize={['4xl', '5xl', '6xl', '8xl']}
+                        fontSize={['5xl', '6xl', '7xl', '8xl']}
                         bgGradient={`linear(to-l, ${ACCENT_COLOR}, #ffffff)`}
                         bgClip='text'
                         letterSpacing={'tighter'}
@@ -36,7 +36,7 @@ const Hero = () => {
                 </Box>
                 <Box>
                     <Heading
-                        fontSize={['4xl', '5xl', '6xl', '7xl']}
+                        fontSize={['3xl', '5xl', '6xl', '7xl']}
                         fontWeight={'semibold'}
                         lineHeight={1.2}
                         color='gray.400'>
@@ -49,7 +49,7 @@ const Hero = () => {
                     maxW={['80%', '70%', '60%', '50%']}
                     lineHeight={1.5}
                     fontSize={['md', 'lg']}
-                    color={['gray.300', 'gray.400', 'gray.400']}
+                    color={'gray.400'}
                     letterSpacing={1.1}
                     fontWeight={'light'}>
                     <Text>
@@ -74,8 +74,8 @@ const Hero = () => {
                             glareColor={ACCENT_COLOR}
                             glarePosition='all'>
                             <Button
-                                fontSize={['lg', 'lg', 'xl', 'xl']}
-                                p={[5, 6, 7, 8]}
+                                fontSize={['xl', 'xl']}
+                                p={[8]}
                                 fontWeight={'normal'}
                                 variant={'outline'}
                                 fontFamily={'mono'}

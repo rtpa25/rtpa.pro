@@ -12,7 +12,7 @@ const ContactFooter = () => {
                     fontFamily={'mono'}
                     fontSize={'lg'}
                     mb={4}>
-                    06. What’s Next?
+                    05. What’s Next?
                 </Heading>
                 <Heading fontSize={'5xl'} mb={4}>
                     Get In Touch

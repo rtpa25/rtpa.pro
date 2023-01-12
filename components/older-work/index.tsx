@@ -11,6 +11,7 @@ const OlderWork = () => {
                 <SectionHeading
                     sectionHeadingText={'Other Projects'}
                     sectionHeadingNumber={4}
+                    showNumber={false}
                 />
             </Box>
             <SimpleGrid

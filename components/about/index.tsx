@@ -13,6 +13,7 @@ const About = () => {
                 <SectionHeading
                     sectionHeadingText={'About Me'}
                     sectionHeadingNumber={1}
+                    showNumber={true}
                 />
             </Box>
             <Flex flexDir={['column', 'column', 'column', 'row']}>
