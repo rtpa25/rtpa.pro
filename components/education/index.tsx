@@ -5,6 +5,7 @@ import { ACCENT_COLOR } from '../../styles/consts';
 import SectionHeading from '../misc/section-heading';
 import SectionWrapper from '../misc/section-wrapper';
 import IndividualCourseCertificate from './individual-certificate';
+import Tilt from 'react-parallax-tilt';
 
 const Education = () => {
     return (
@@ -32,18 +33,33 @@ const Education = () => {
                     href='https://www.linkedin.com/in/rtpa25/details/certifications/'
                     target={'_blank'}
                     rel='noreferrer'>
-                    <Button
-                        px={['16', '20']}
-                        borderColor={ACCENT_COLOR}
-                        color={ACCENT_COLOR}
-                        variant='outline'>
-                        <Flex alignItems='flex-end'>
-                            <Text mr={2}>Show all 12 certificates </Text>
-                            <Box>
-                                <BsArrowRight />
-                            </Box>
-                        </Flex>
-                    </Button>
+                    <Tilt
+                        tiltEnable={false}
+                        glareEnable={true}
+                        glareMaxOpacity={0.8}
+                        glareColor={ACCENT_COLOR}
+                        glarePosition='all'>
+                        <Button
+                            px={['10', '12', '14', '16']}
+                            fontFamily={'mono'}
+                            borderColor={ACCENT_COLOR}
+                            color={ACCENT_COLOR}
+                            boxShadow={
+                                'rgba(132, 59, 206, 0.15) 0px 8px 32px 10px'
+                            }
+                            _hover={{
+                                boxShadow:
+                                    'rgba(152, 67, 237, 0.501) 0px 8px 32px 10px',
+                            }}
+                            variant='outline'>
+                            <Flex alignItems='flex-end'>
+                                <Text mr={2}>Show all 12 certificates </Text>
+                                <Box>
+                                    <BsArrowRight />
+                                </Box>
+                            </Flex>
+                        </Button>
+                    </Tilt>
                 </a>
             </Box>
         </SectionWrapper>
