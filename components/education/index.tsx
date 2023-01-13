@@ -33,13 +33,11 @@ const Education = () => {
                     target={'_blank'}
                     rel='noreferrer'>
                     <Button
-                        px='20'
+                        px={['16', '20']}
                         borderColor={ACCENT_COLOR}
                         color={ACCENT_COLOR}
                         variant='outline'>
-                        <Flex
-                            justifyContent={'space-between'}
-                            alignItems='flex-end'>
+                        <Flex alignItems='flex-end'>
                             <Text mr={2}>Show all 12 certificates </Text>
                             <Box>
                                 <BsArrowRight />
