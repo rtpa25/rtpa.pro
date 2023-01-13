@@ -38,17 +38,17 @@ const OldWorkCard: FC<OldWorkCardProps> = ({ oldProject }) => {
                         fontSize={'2xl'}>
                         {oldProject.name}
                     </Heading>
-                    <IconButton
-                        aria-label={'github'}
-                        variant='outline'
-                        icon={<FiGithub />}
-                        color={ACCENT_COLOR}>
-                        <a
-                            href={oldProject.github}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                        />
-                    </IconButton>
+                    <a
+                        href={oldProject.github}
+                        target='_blank'
+                        rel='noopener noreferrer'>
+                        <IconButton
+                            aria-label={'github'}
+                            variant='outline'
+                            color={ACCENT_COLOR}>
+                            <FiGithub />
+                        </IconButton>
+                    </a>
                 </Flex>
             </CardHeader>
             <CardBody>
