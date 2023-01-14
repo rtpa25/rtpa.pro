@@ -24,7 +24,7 @@ const About = () => {
                         lineHeight={1.5}
                         letterSpacing={'wide'}
                         color={'gray.500'}>
-                        Hello! My name is Ronit and I Specialize in building
+                        Hello! My name is Ronit and I specialize in building
                         full-stack web apps, being a startup enthusiast I am
                         currently looking to contribute to teams that are trying
                         to make a difference like yours. I have previously
