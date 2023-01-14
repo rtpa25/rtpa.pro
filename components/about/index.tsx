@@ -18,26 +18,7 @@ const About = () => {
             </Box>
             <Flex flexDir={['column', 'column', 'column', 'row']}>
                 <Box flex={1.3} mr={6}>
-                    <Text
-                        my={4}
-                        fontSize={'lg'}
-                        lineHeight={1.5}
-                        letterSpacing={'wide'}
-                        color={'gray.500'}>
-                        Hello! My name is Ronit and I specialize in building
-                        full-stack web apps, being a startup enthusiast I am
-                        currently looking to contribute to teams that are trying
-                        to make a difference like yours. I have previously
-                        worked at{' '}
-                        <Link
-                            color={ACCENT_COLOR}
-                            href='https://supertokens.com'
-                            rel='noopener noreferrer'
-                            target='_blank'>
-                            SuperTokens(YCS20)
-                        </Link>
-                    </Text>
-                    <Text
+                <Text
                         my={4}
                         fontSize={'lg'}
                         lineHeight={1.5}
@@ -62,6 +43,24 @@ const About = () => {
                         </Link>{' '}
                         to solve the problem that the team is facing.
                     </Text>
+                    <Text
+                        my={4}
+                        fontSize={'lg'}
+                        lineHeight={1.5}
+                        letterSpacing={'wide'}
+                        color={'gray.500'}>
+                        {"I've"} previously
+                        worked at{' '}
+                        <Link
+                            color={ACCENT_COLOR}
+                            href='https://supertokens.com'
+                            rel='noopener noreferrer'
+                            target='_blank'>
+                            SuperTokens(YCS20){' '}
+                        </Link>
+                        as a Software Engineer
+                    </Text>
+              
                     <Text
                         my={4}
                         fontSize={'lg'}

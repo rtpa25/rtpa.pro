@@ -28,7 +28,7 @@ export const projects: Project[] = [
     {
         name: 'Devfolio',
         description:
-            'A web app that allows developers to build their own portfolio, without putting extra effort of designing and building it from scratch. Add about yourself, your projects, your skills, your education and your experience and get a portfolio that looks good with a sharable link',
+            'A web app that allows developers to build their own portfolio, without putting extra effort of designing and building it from scratch. Add about yourself, your projects, your tech-stack, your education and your experience and get a portfolio that looks good with a sharable link',
         github: 'https://github.com/rtpa25/portfolio-gen-web',
         videoId: 'bkAFyzbUSjU',
         technologies: [

@@ -26,8 +26,7 @@ const ContactFooter = () => {
                     lineHeight={'tall'}>
                     I’m currently looking for an internship at a seed or
                     series-A startup as a full-Stack Developer Intern and
-                    contribute to teams that want to make a difference. Does it
-                    ring a bell, 👇
+                    contribute to teams that want to make a difference. Rings a bell?
                 </Text>
                 <Box mx={'auto'} w='fit-content' mt={10}>
                     <a

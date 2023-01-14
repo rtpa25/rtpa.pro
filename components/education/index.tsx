@@ -12,7 +12,7 @@ const Education = () => {
         <SectionWrapper variant='wide'>
             <Box my={16}>
                 <SectionHeading
-                    sectionHeadingText={'Online Courses Taken'}
+                    sectionHeadingText={'Course Certificates'}
                     sectionHeadingNumber={4}
                     showNumber={true}
                 />

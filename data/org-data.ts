@@ -13,7 +13,7 @@ export const orgData: {
         position: 'Software Engineer',
         work: [
             'Extensively worked on the Golang SDK of SuperTokens. This is one of the many backend SDKs used by SuperTokens to interact with the core which does all the heavy lifting of session management.',
-            'Build various dummy implementations of the SuperTokens SDK in Golang with go-fiber, Grpc. And also built an implementation with svelte using the SuperTokens-React-SDK.',
+            'Built various dummy implementations of the SuperTokens SDK in Golang with go-fiber, gRPC. And also built an implementation with svelte using the SuperTokens-React-SDK.',
             'Wrote extensive unit tests for the entire Golang SDK and contributed to CI/CD pipelines for the SDK.',
             'Collaborated with other fellow engineers in pair programming sessions and also participated in brainstorming sessions with the management team discussing customer acquisition and growth opportunities.',
         ],
