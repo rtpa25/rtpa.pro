@@ -5,3 +5,5 @@ export { default as WorkSection } from './work-section';
 export { default as OlderWorkSection } from './older-works-section';
 export { default as EducationSection } from './education-section';
 export { default as ContactFooterSection } from './contact-footer-section';
+export { default as TestimonialSection } from './testimonial-section';
+export { default as OpenSourceSection } from './open-source-section';

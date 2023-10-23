@@ -2,11 +2,39 @@ import { Project } from '../types/project';
 
 export const projects: Project[] = [
     {
+        name: 'ShapeShifter',
+        description:
+            'A highly sophisticated job search portal. Gathers jobs from all job search websites, runs analysis on thousands of jobs your behalf and recommends you the best jobs based on your skills and preferences, straight to your inbox.',
+        // github: 'https',
+        // videoId: '6zU-NIniW1U',
+        loomVideo:
+            'https://www.loom.com/embed/3b78b6af89a94303b6605028711edde4?sid=e0b4adb4-266c-4a3a-a8b1-76be2b5fc40c',
+        technologies: [
+            'NextJS',
+            'Typescript',
+            'ChakraUI',
+            'SWR',
+            'MongoDB',
+            'NodeJS',
+            'ExpressJS',
+            'Nats-Streaming-Server',
+            'Docker',
+            'Kubernetes',
+            'Ingress-Nginx',
+            'Skaffold',
+            'Github-Actions',
+            'DigitalOcean',
+        ],
+        website: 'https://shapeshifter-beta.vercel.app/',
+    },
+    {
         name: 'Micro Insta',
         description:
             'A social media app on which you can create profile, make friends via friend requests, create posts, like and comment on them.This app is implemented using micro services architecture where each service is deployed in a separate docker container and all the containers are managed by kubernetes.',
         github: 'https://github.com/rtpa25/MicroInsta',
-        videoId: '6zU-NIniW1U',
+        // videoId: '6zU-NIniW1U',
+        loomVideo:
+            'https://www.loom.com/embed/3b78b6af89a94303b6605028711edde4?sid=e0b4adb4-266c-4a3a-a8b1-76be2b5fc40c',
         technologies: [
             'NextJS',
             'Typescript',
@@ -92,3 +120,4 @@ export const projects: Project[] = [
         website: 'https://learnify.site/',
     },
 ];
+

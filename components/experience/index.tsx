@@ -5,17 +5,19 @@ import SectionHeading from '../misc/section-heading';
 import SectionWrapper from '../misc/section-wrapper';
 import OrgDataCard from './org-data-card';
 import OrgListButton from './org-list-button';
+import { useAutoAnimate } from '@formkit/auto-animate/react';
 
 const Experience = () => {
-    const [selectedOrgName, setSelectedOrgName] =
-        useState<string>('SuperTokens');
+    const [selectedOrgName, setSelectedOrgName] = useState<string>('Superkit');
 
     const orgButtonClickHandler = (orgName: string) => {
         setSelectedOrgName(orgName);
     };
 
+    const [parent] = useAutoAnimate();
+
     return (
-        <SectionWrapper>
+        <SectionWrapper variant='wide'>
             <Box mb={[16]}>
                 <SectionHeading
                     sectionHeadingText={'Past Experiences'}
@@ -23,8 +25,8 @@ const Experience = () => {
                     showNumber={true}
                 />
             </Box>
-            <Flex flexDir={['column', 'column', 'row', 'row']} mb={40}>
-                <Box flex={1}>
+            <Flex flexDir={['column', 'column', 'row', 'row']}>
+                <Box flex={1} ref={parent}>
                     <UnorderedList
                         listStyleType={'none'}
                         mx={0}
@@ -60,3 +62,4 @@ const Experience = () => {
 };
 
 export default Experience;
+

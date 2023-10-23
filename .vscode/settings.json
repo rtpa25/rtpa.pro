@@ -1,20 +1,3 @@
 {
-    "typescript.tsdk": "node_modules/typescript/lib",
-    "typescript.enablePromptUseWorkspaceTsdk": true,
-    "cSpell.words": [
-        "Devfolio",
-        "Gonic",
-        "Learnify",
-        "Nykka",
-        "scroller",
-        "sqlc"
-    ],
-    "spellright.language": [
-        "en"
-    ],
-    "spellright.documentTypes": [
-        "markdown",
-        "latex",
-        "plaintext"
-    ]
+    "typescript.tsdk": "node_modules/typescript/lib"
 }

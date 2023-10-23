@@ -1,23 +1,26 @@
-import { Box, Card, CardBody, Flex, Heading, Stack } from '@chakra-ui/react';
+import {
+    Box,
+    Button,
+    Card,
+    CardBody,
+    Flex,
+    Heading,
+    Image,
+    Stack,
+} from '@chakra-ui/react';
 import { FC } from 'react';
-import LiteYouTubeEmbed from 'react-lite-youtube-embed';
-import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css';
+import { BsBoxArrowUpRight } from 'react-icons/bs';
 import { ACCENT_COLOR, GRADIENT_ACCENT_COLOR } from '../../styles/consts';
-import { Project } from '../../types/project';
-import ProjectButtonGroup from './project-button-group';
-import ProjectTechList from './project-tech-list';
+import { OpenSourceProject } from '../../types/open-source';
+import ProjectTechList from '../work/project-tech-list';
 
-interface IndividualProjectCardProps {
-    project: Project;
+interface OpenSourceCardProps {
+    project: OpenSourceProject;
     idx: number;
     isLast: boolean;
 }
 
-const IndividualProjectCard: FC<IndividualProjectCardProps> = ({
-    project,
-    idx,
-    isLast,
-}) => {
+const OpenSourceCard: FC<OpenSourceCardProps> = ({ project, idx, isLast }) => {
     return (
         <Flex
             flexDirection={[
@@ -46,7 +49,7 @@ const IndividualProjectCard: FC<IndividualProjectCardProps> = ({
                         fontFamily={'mono'}
                         fontSize='md'
                         color={ACCENT_COLOR}>
-                        Featured Project
+                        OSS Contribution
                     </Heading>
                     <Heading
                         mb={2}
@@ -59,7 +62,6 @@ const IndividualProjectCard: FC<IndividualProjectCardProps> = ({
                         {project.name}
                     </Heading>
                 </Stack>
-
                 <Card
                     my={[0, 0, 0, 0, 2]}
                     border='1px'
@@ -89,17 +91,11 @@ const IndividualProjectCard: FC<IndividualProjectCardProps> = ({
                             cursor={'pointer'}>
                             {project.name}
                         </Heading>
-                        {project.description}
+                        {project.work}
                         <Stack w={'full'}>
                             <ProjectTechList
                                 isOdd={idx % 2 !== 0}
-                                techList={project.technologies}
-                                isInsideProjectCard={true}
-                            />
-
-                            <ProjectButtonGroup
-                                website={project.website}
-                                github={project.github}
+                                techList={project.tags}
                                 isInsideProjectCard={true}
                             />
                         </Stack>
@@ -107,14 +103,22 @@ const IndividualProjectCard: FC<IndividualProjectCardProps> = ({
                 </Card>
                 <ProjectTechList
                     isOdd={idx % 2 !== 0}
-                    techList={project.technologies}
+                    techList={project.tags}
                     isInsideProjectCard={false}
                 />
-                <ProjectButtonGroup
-                    website={project.website}
-                    github={project.github}
-                    isInsideProjectCard={false}
-                />
+                <Button
+                    variant='solid'
+                    bgColor={GRADIENT_ACCENT_COLOR}
+                    mt={3}
+                    _hover={{
+                        bgColor: GRADIENT_ACCENT_COLOR,
+                        opacity: 0.8,
+                    }}>
+                    <Box display={'flex'} alignItems='center' gap={4}>
+                        <span>View Contribution</span>
+                        <BsBoxArrowUpRight />
+                    </Box>
+                </Button>
             </Box>
             <Box
                 position={'relative'}
@@ -129,33 +133,12 @@ const IndividualProjectCard: FC<IndividualProjectCardProps> = ({
                 }}
                 borderBottomRadius={'none'}>
                 <Box>
-                    {project.videoId && (
-                        <LiteYouTubeEmbed id={project.videoId} title={''} />
-                    )}
-                    {project.loomVideo && (
-                        <div
-                            style={{
-                                position: 'relative',
-                                paddingBottom: '56.25%',
-                                height: 0,
-                            }}>
-                            <iframe
-                                src={project.loomVideo}
-                                allowFullScreen
-                                style={{
-                                    position: 'absolute',
-                                    top: 0,
-                                    left: 0,
-                                    width: '100%',
-                                    height: '100%',
-                                }}></iframe>
-                        </div>
-                    )}
+                    <Image src={project.imageUrl} alt='project' />
                 </Box>
             </Box>
         </Flex>
     );
 };
 
-export default IndividualProjectCard;
+export default OpenSourceCard;
 

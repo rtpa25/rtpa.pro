@@ -3,6 +3,31 @@ import { OrgData } from '../types/org';
 export const orgData: {
     [key: string]: OrgData;
 } = {
+    Superkit: {
+        org: {
+            name: 'Superkit',
+            website: 'https://superkit.io',
+        },
+        joiningMonth: 'Jan 2023',
+        leavingMonth: 'Oct 2023',
+        position: 'Founding Engineer',
+        work: [
+            'Extensively worked on our cron jobs workflow that basically inserts/deletes/updates realtime data into our DB with a Redis cache layer, substantially reducing our users wait time paired up with api costs',
+            'Added an event bus async communication system between multiple services in our monorepo to communicate between each other and also trigger cron jobs, on variety of runtimes.',
+            'implemented variety of long running cron jobs on serverless and edge runtimes with upstash and proper breakdown of big jobs into small ones',
+            'Worked extensively on LLMs on variety of projects, which includes a service which runs analysis with various parameters on Vercel edge runtimes with Prisma data proxy, and an admin panel to crawl over variety of urls recursively generating all child urls to create Pinecone embeddings',
+            'Added tRPC to the build our APIs making our developer experience improve significantlly, helps us ship 10x faster',
+            'Revamped the entire UI for app.superkit.io',
+            'Migrated from having separate repositories to a TurboRepo MonoRepo',
+            // 'Added a reusable template model in our campaign templates service which enables us share created templates within multiple apps of our monoRepo, which was possible to achieve my embedding required templates with an iframe which also included embedding designs inside the same',
+            'Added a consistent design system through out our entire monoRepo',
+            'Added a robust CI/CD pipeline to the monoRepo improving dev experience as our CI/CD pipeline is now way faster due to turbo repo and Vercel dependency caching',
+            'Added shared schema type validation within variety of apps via a common service with Zod',
+            'Transitioned from Firebase -> MongoDB+Typegoose -> Prisma + MongoDB + Prisma data proxy for edge runtimes.',
+            'Added tailwind CSS support to existing material ui and chakra ui projects, improving developer experience while creating UI, and helps us being way more productive',
+            'Added Zustand state management tooling to our entire app and improved code style',
+        ],
+    },
     SuperTokens: {
         org: {
             name: 'SuperTokens',
@@ -36,4 +61,5 @@ export const orgData: {
     },
 };
 
-export const orgList = ['SuperTokens', 'Ether'];
+export const orgList = ['Superkit', 'SuperTokens', 'Ether'];
+

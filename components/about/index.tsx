@@ -8,8 +8,8 @@ import SkillListItem from './skill';
 
 const About = () => {
     return (
-        <SectionWrapper>
-            <Box my={10}>
+        <SectionWrapper variant='wide'>
+            <Box mt={10}>
                 <SectionHeading
                     sectionHeadingText={'About Me'}
                     sectionHeadingNumber={1}
@@ -18,7 +18,7 @@ const About = () => {
             </Box>
             <Flex flexDir={['column', 'column', 'column', 'row']}>
                 <Box flex={1.3} mr={6}>
-                <Text
+                    <Text
                         my={4}
                         fontSize={'lg'}
                         lineHeight={1.5}
@@ -49,8 +49,7 @@ const About = () => {
                         lineHeight={1.5}
                         letterSpacing={'wide'}
                         color={'gray.500'}>
-                        {"I've"} previously
-                        worked at{' '}
+                        {"I've"} previously worked at{' '}
                         <Link
                             color={ACCENT_COLOR}
                             href='https://supertokens.com'
@@ -60,7 +59,7 @@ const About = () => {
                         </Link>
                         as a Software Engineer
                     </Text>
-              
+
                     <Text
                         my={4}
                         fontSize={'lg'}
@@ -123,3 +122,4 @@ const About = () => {
 };
 
 export default About;
+

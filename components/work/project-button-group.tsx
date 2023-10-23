@@ -5,8 +5,8 @@ import { FiGithub } from 'react-icons/fi';
 import { ACCENT_COLOR } from '../../styles/consts';
 
 interface ProjectButtonGroupProps {
-    website: string;
-    github: string;
+    website?: string;
+    github?: string;
     isInsideProjectCard: boolean;
 }
 
@@ -21,24 +21,29 @@ const ProjectButtonGroup: FC<ProjectButtonGroupProps> = ({
 
     return (
         <ButtonGroup my={2} variant='outline' spacing={4} display={display}>
-            <a href={github} target='_blank' rel='noopener noreferrer'>
-                <IconButton
-                    _hover={{ color: ACCENT_COLOR }}
-                    fontSize='lg'
-                    aria-label='github'>
-                    <FiGithub />
-                </IconButton>
-            </a>
-            <a href={website} target='_blank' rel='noopener noreferrer'>
-                <IconButton
-                    _hover={{ color: ACCENT_COLOR }}
-                    fontSize='lg'
-                    aria-label='github'>
-                    <BiLinkExternal />
-                </IconButton>
-            </a>
+            {github && (
+                <a href={github} target='_blank' rel='noopener noreferrer'>
+                    <IconButton
+                        _hover={{ color: ACCENT_COLOR }}
+                        fontSize='lg'
+                        aria-label='github'>
+                        <FiGithub />
+                    </IconButton>
+                </a>
+            )}
+            {website && (
+                <a href={website} target='_blank' rel='noopener noreferrer'>
+                    <IconButton
+                        _hover={{ color: ACCENT_COLOR }}
+                        fontSize='lg'
+                        aria-label='github'>
+                        <BiLinkExternal />
+                    </IconButton>
+                </a>
+            )}
         </ButtonGroup>
     );
 };
 
 export default ProjectButtonGroup;
+

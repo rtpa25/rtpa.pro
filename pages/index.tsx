@@ -10,6 +10,8 @@ import {
     HeroSection,
     OlderWorkSection,
     WorkSection,
+    TestimonialSection,
+    OpenSourceSection,
 } from '../sections';
 import { GRADIENT_ACCENT_COLOR } from '../styles/consts';
 
@@ -23,6 +25,8 @@ const Home = () => {
                 <HeroSection />
                 <AboutSection />
                 <ExperienceSection />
+                <TestimonialSection />
+                <OpenSourceSection />
                 <WorkSection />
                 <OlderWorkSection />
                 <EducationSection />
@@ -35,3 +39,4 @@ const Home = () => {
 };
 
 export default Home;
+

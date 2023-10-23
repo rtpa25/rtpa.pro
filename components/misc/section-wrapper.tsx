@@ -18,7 +18,7 @@ const SectionWrapper: FC<SectionWrapperProps> = ({ children, variant }) => {
                 `${variant === 'wide' ? '70%' : '60%'}`,
             ]}
             minH={'100vh'}
-            mb={10}
+            // mb={10}
             mx={'auto'}>
             {children}
         </Flex>
@@ -26,3 +26,4 @@ const SectionWrapper: FC<SectionWrapperProps> = ({ children, variant }) => {
 };
 
 export default SectionWrapper;
+

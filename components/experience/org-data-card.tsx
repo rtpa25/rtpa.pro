@@ -75,3 +75,4 @@ const OrgDataCard: FC<OrgDataCardProps> = ({
 };
 
 export default OrgDataCard;
+
