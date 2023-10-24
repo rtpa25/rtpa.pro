@@ -6,6 +6,7 @@ import {
     Flex,
     Heading,
     Image,
+    Link,
     Stack,
     Tag,
     TagLabel,
@@ -155,15 +156,18 @@ const OpenSourceCard: FC<OpenSourceCardProps> = ({ project, idx, isLast }) => {
                                     bgColor: GRADIENT_ACCENT_COLOR,
                                     opacity: 0.8,
                                 }}>
-                                <Box
+                                <Link
                                     display={'flex'}
                                     alignItems='center'
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    href={project.github}
                                     justifyContent={'center'}
                                     textColor={'white'}
                                     gap={4}>
                                     <span>View Contribution</span>
                                     <BsBoxArrowUpRight />
-                                </Box>
+                                </Link>
                             </Button>
                         </Stack>
                     </CardBody>
@@ -182,10 +186,16 @@ const OpenSourceCard: FC<OpenSourceCardProps> = ({ project, idx, isLast }) => {
                         bgColor: GRADIENT_ACCENT_COLOR,
                         opacity: 0.8,
                     }}>
-                    <Box display={'flex'} alignItems='center' gap={4}>
+                    <Link
+                        display={'flex'}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        alignItems='center'
+                        gap={4}
+                        href={project.github}>
                         <span>View Contribution</span>
                         <BsBoxArrowUpRight />
-                    </Box>
+                    </Link>
                 </Button>
             </Box>
             <Box

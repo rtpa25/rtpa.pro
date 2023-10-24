@@ -65,13 +65,26 @@ const About = () => {
                         lineHeight={1.5}
                         letterSpacing={'wide'}
                         color={'gray.500'}>
-                        I started coding in late 2020. By mid 2021 I was already
-                        hooked and built a mobile app that got 1.5k downloads
-                        with a 4.9 rating on play store, Since then I have
-                        Worked at 2 startups as a full stack developer, Built
-                        internal UI libraries all the way to deploying
-                        kubernetes clusters, covering every realm of an
-                        app&apos;s lifecycle.
+                        {
+                            'Wrote my first line of code in late 2020. By early 2021 I built a mobile app that got'
+                        }
+                        <Link color={ACCENT_COLOR}>
+                            {' '}
+                            1.5k downloads with a 4.9 rating{' '}
+                        </Link>
+                        {
+                            'on play store, Since then I have Worked at 2 startups as a full stack developer, Built'
+                        }
+                        <Link color={ACCENT_COLOR}>
+                            {' '}
+                            internal UI libraries{' '}
+                        </Link>
+                        {'all the way to'}
+                        <Link color={ACCENT_COLOR}>
+                            {' '}
+                            deploying Kubernetes Clusters{' '}
+                        </Link>
+                        {"covering every realm of an app's lifecycle."}
                     </Text>
 
                     <Text
@@ -79,7 +92,7 @@ const About = () => {
                         fontSize={'lg'}
                         lineHeight={1.5}
                         letterSpacing={'wide'}
-                        color={'gray.500'}>
+                        color={'gray.400'}>
                         Here are few{' '}
                         <Link
                             color={ACCENT_COLOR}

@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
+import { Box, Button, Flex, Heading, Link, Text } from '@chakra-ui/react';
 import { Fade } from 'react-awesome-reveal';
 import { ACCENT_COLOR } from '../../styles/consts';
 import Tilt from 'react-parallax-tilt';
@@ -44,18 +44,44 @@ const Hero = () => {
                     </Heading>
                 </Box>
 
-                <Box
-                    my={6}
-                    maxW={['80%', '70%', '60%', '50%']}
-                    lineHeight={1.5}
-                    fontSize={['md']}
-                    color={'gray.400'}
-                    letterSpacing={1}
-                    fontWeight={'light'}>
-                    <Text>
+                <Box my={6} maxW={['80%', '70%', '60%', '50%']}>
+                    <Text
+                        fontSize={'md'}
+                        lineHeight={1.5}
+                        letterSpacing={'wide'}
+                        color={'gray.400'}>
                         {
-                            "Hi, I'm, a software engineer from India having previously worked at SuperTokens (YC S20) and SuperKit (both while attending college). I've a habit of building sophisticated products & shipping them really fast: be it making an internal UI library, or handling infrastructure. I truly champion open source; having shipped to Formbricks, Trigger, Infisical, Twenty, Cal, HyperDX and many more. "
-                        }{' '}
+                            "Hi, I'm, a software engineer from India having previously worked at"
+                        }
+                        <Link
+                            color={ACCENT_COLOR}
+                            href='https://supertokens.com'
+                            rel='noopener noreferrer'
+                            target='_blank'>
+                            {' '}
+                            SuperTokens(YCS20){' '}
+                        </Link>
+                        {'and '}
+                        <Link
+                            color={ACCENT_COLOR}
+                            href='https://superkit.io'
+                            rel='noopener noreferrer'
+                            target='_blank'>
+                            SuperKit (both while attending college).
+                        </Link>{' '}
+                        {
+                            "I've a habit of building sophisticated products & shipping them really fast: be it making an internal UI library, or handling infrastructure. I truly champion "
+                        }
+                        <Link
+                            color={ACCENT_COLOR}
+                            href='https://github.com/rtpa25'
+                            rel='noopener noreferrer'
+                            target='_blank'>
+                            open source
+                        </Link>
+                        {
+                            '; having shipped to Formbricks, Trigger, Infisical, Twenty, Cal, HyperDX and many more.'
+                        }
                     </Text>
                 </Box>
                 <Box my={4}>

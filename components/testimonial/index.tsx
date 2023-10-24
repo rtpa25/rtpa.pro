@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionWrapper from '../misc/section-wrapper';
-import { Box, Flex, Image, Text } from '@chakra-ui/react';
+import { Box, Flex, Image, Link, Text } from '@chakra-ui/react';
 import SectionHeading from '../misc/section-heading';
 import { ACCENT_COLOR } from '../../styles/consts';
 import Tilt from 'react-parallax-tilt';
@@ -54,15 +54,17 @@ const TestimonialCard = () => {
                         lineHeight={1.4}
                         color={'gray.400'}>
                         {`"One of the best developers I have worked with, in my 15
-                        years of experience. He ships features at a very fast
-                        pace, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, quam?.
-                        pace, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, quam?. "`}
+                        years of experience. Never seen someone ship multiple long term features for our product in an astronomical speed. He talks in hours not days, and that's a testament to his work ethic."`}
                     </Text>
                     <Flex flexDir={'column'} fontWeight='semibold'>
-                        <Text>Sedat Akkus</Text>
+                        <Link
+                            href='https://www.linkedin.com/in/sedatakkus/'
+                            target={'_blank'}
+                            rel='noreffer'>
+                            <Text>Sedat Akkus</Text>
+                        </Link>
                         <Text
                             textColor={ACCENT_COLOR}
-                            // fontFamily='mono'
                             fontStyle='italic'
                             fontSize='sm'>
                             CEO Superkit, Sr. Engineering Manager Adobe CA.
