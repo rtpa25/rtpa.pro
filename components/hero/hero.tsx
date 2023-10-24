@@ -44,7 +44,7 @@ const Hero = () => {
                     </Heading>
                 </Box>
 
-                <Box my={6} maxW={['80%', '70%', '60%', '50%']}>
+                <Box my={6} maxW={['100%', '70%', '60%', '50%']}>
                     <Text
                         fontSize={'md'}
                         lineHeight={1.5}
@@ -80,7 +80,7 @@ const Hero = () => {
                             open source
                         </Link>
                         {
-                            '; having shipped to Formbricks, Trigger, Infisical, Twenty, Cal, HyperDX and many more.'
+                            '; having shipped to Formbricks, Trigger, Infisical, Twenty, Cal and many more.'
                         }
                     </Text>
                 </Box>
