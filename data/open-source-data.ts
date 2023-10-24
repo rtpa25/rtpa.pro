@@ -19,11 +19,11 @@ export const openSourceProjects: OpenSourceProject[] = [
         ],
         tags: [
             {
-                text: '3 Major Features',
+                text: '✨ 3 Major Features',
                 type: 'feature',
             },
             {
-                text: 'bug fixes',
+                text: 'Bug Fixes',
                 type: 'bug fix',
             },
         ],
@@ -36,7 +36,7 @@ export const openSourceProjects: OpenSourceProject[] = [
         tech: ['Helm Charts', 'Kubernetes', 'Docker', 'Documentation'],
         tags: [
             {
-                text: '1 Major Feature',
+                text: '1 Major Feature ✨',
                 type: 'feature',
             },
             {
@@ -60,7 +60,7 @@ export const openSourceProjects: OpenSourceProject[] = [
         ],
         tags: [
             {
-                text: '1 Feature',
+                text: '✨ 1 Major Feature',
                 type: 'feature',
             },
         ],
@@ -81,7 +81,7 @@ export const openSourceProjects: OpenSourceProject[] = [
                 type: 'test',
             },
             {
-                text: 'Chores',
+                text: 'Chore',
                 type: 'chore',
             },
         ],
