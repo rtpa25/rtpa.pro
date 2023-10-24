@@ -56,8 +56,7 @@ const TestimonialCard = () => {
                         fontStyle='italic'
                         lineHeight={1.4}
                         color={'gray.400'}>
-                        {`"One of the best developers I have worked with, in my 15
-                        years of experience. Never seen someone ship multiple long term features for our product in an astronomical speed. He talks in hours not days, and that's a testament to his work ethic."`}
+                        {`"One of the best developers I've worked with in my 15 years of experience. I've never seen someone deliver multiple long-term features for our product at such an astonishing speed. He estimates tasks in hours, not days, which is a testament to his work ethic. He also has a keen eye for design and prioritizes the user's perspective before releasing anything to production. Despite the time zone difference, he consistently ensures that our working hours overlap."`}
                     </Text>
                     <Flex flexDir={'column'} fontWeight='semibold'>
                         <Link

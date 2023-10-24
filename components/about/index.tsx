@@ -66,23 +66,18 @@ const About = () => {
                         letterSpacing={'wide'}
                         color={'gray.500'}>
                         {
-                            'Wrote my first line of code in late 2020. By early 2021 I built a mobile app that got'
+                            'Wrote my first line of code in late 2020. By early 2021 I built a mobile app that got '
                         }
                         <Link color={ACCENT_COLOR}>
-                            {' '}
-                            1.5k downloads with a 4.9 rating{' '}
+                            1.5k downloads with a 4.9 rating
                         </Link>
                         {
-                            'on play store, Since then I have Worked at 2 startups as a full stack developer, Built'
+                            ' on play store, Since then I have Worked at 2 startups as a full stack developer, Built '
                         }
+                        <Link color={ACCENT_COLOR}>internal UI libraries</Link>
+                        {'all the way to '}
                         <Link color={ACCENT_COLOR}>
-                            {' '}
-                            internal UI libraries{' '}
-                        </Link>
-                        {'all the way to'}
-                        <Link color={ACCENT_COLOR}>
-                            {' '}
-                            deploying Kubernetes Clusters{' '}
+                            deploying Kubernetes Clusters
                         </Link>
                         {"covering every realm of an app's lifecycle."}
                     </Text>

@@ -51,7 +51,7 @@ const Hero = () => {
                         letterSpacing={'wide'}
                         color={'gray.400'}>
                         {
-                            "Hi, I'm, a software engineer from India having previously worked at"
+                            "Hi, I'm a software engineer from India having previously worked at"
                         }
                         <Link
                             color={ACCENT_COLOR}
