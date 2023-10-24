@@ -19,7 +19,7 @@ const Hero = () => {
                         color={ACCENT_COLOR}
                         fontSize={['md', 'md', 'lg', 'xl']}
                         fontWeight={'light'}
-                        lineHeight={1.2}>
+                        lineHeight={1.5}>
                         Hi, my name is
                     </Heading>
                 </Box>
@@ -36,7 +36,7 @@ const Hero = () => {
                 </Box>
                 <Box>
                     <Heading
-                        fontSize={['3xl', '5xl', '6xl', '7xl']}
+                        fontSize={['3xl', '5xl', '6xl']}
                         fontWeight={'semibold'}
                         lineHeight={1.2}
                         color='gray.400'>
@@ -48,9 +48,9 @@ const Hero = () => {
                     my={6}
                     maxW={['80%', '70%', '60%', '50%']}
                     lineHeight={1.5}
-                    fontSize={['md', 'lg']}
+                    fontSize={['md']}
                     color={'gray.400'}
-                    letterSpacing={1.1}
+                    letterSpacing={1}
                     fontWeight={'light'}>
                     <Text>
                         {
@@ -99,3 +99,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

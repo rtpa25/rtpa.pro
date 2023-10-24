@@ -15,19 +15,15 @@ const AppBarNavButton: FC<AppBarNavButtonProps> = ({ btnText, idx, to }) => {
             <Button
                 fontFamily={'mono'}
                 fontWeight={'normal'}
-                fontSize={'sm'}
-                _focus={{ outline: 'none', bgColor: 'inherit' }}
-                _hover={{
-                    bgColor: 'inherit',
-                    color: ACCENT_COLOR,
-                }}>
-                <Text mx={1} color={ACCENT_COLOR}>
-                    0{idx + 1}.{' '}
-                </Text>
-                <Text>{btnText}</Text>
+                variant={'ghost'}
+                rounded={'full'}
+                colorScheme={'purple'}
+                fontSize={'sm'}>
+                <Text color={'gray.200'}>{btnText}</Text>
             </Button>
         </ReactScrollLink>
     );
 };
 
 export default AppBarNavButton;
+

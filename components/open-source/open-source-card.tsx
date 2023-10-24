@@ -7,6 +7,8 @@ import {
     Heading,
     Image,
     Stack,
+    Tag,
+    TagLabel,
 } from '@chakra-ui/react';
 import { FC } from 'react';
 import { BsBoxArrowUpRight } from 'react-icons/bs';
@@ -45,12 +47,27 @@ const OpenSourceCard: FC<OpenSourceCardProps> = ({ project, idx, isLast }) => {
                 <Stack
                     spacing={3}
                     display={['none', 'none', 'none', 'none', 'block']}>
-                    <Heading
-                        fontFamily={'mono'}
-                        fontSize='md'
-                        color={ACCENT_COLOR}>
-                        OSS Contribution
-                    </Heading>
+                    <Flex
+                        gap={2}
+                        justifyContent={idx % 2 === 0 ? 'start' : 'end'}>
+                        {project.tags.map((tag, idx) => (
+                            <Tag
+                                key={idx}
+                                size={'md'}
+                                colorScheme={
+                                    tag.type === 'feature'
+                                        ? 'green'
+                                        : tag.type === 'bug fix'
+                                        ? 'red'
+                                        : tag.type === 'test'
+                                        ? 'blue'
+                                        : 'gray'
+                                }
+                                borderRadius={'md'}>
+                                <TagLabel>{tag.text}</TagLabel>
+                            </Tag>
+                        ))}
+                    </Flex>
                     <Heading
                         mb={2}
                         fontSize={'3xl'}
@@ -72,6 +89,9 @@ const OpenSourceCard: FC<OpenSourceCardProps> = ({ project, idx, isLast }) => {
                     <CardBody
                         color={'gray.400'}
                         opacity={0.87}
+                        display={'flex'}
+                        flexDirection={'column'}
+                        gap={3}
                         letterSpacing='wide'
                         lineHeight={'base'}>
                         <Heading
@@ -82,7 +102,7 @@ const OpenSourceCard: FC<OpenSourceCardProps> = ({ project, idx, isLast }) => {
                                 'block',
                                 'none',
                             ]}
-                            mb={4}
+                            // mb={4}
                             fontSize={'3xl'}
                             fontWeight='bold'
                             color={'gray.300'}
@@ -91,23 +111,71 @@ const OpenSourceCard: FC<OpenSourceCardProps> = ({ project, idx, isLast }) => {
                             cursor={'pointer'}>
                             {project.name}
                         </Heading>
+                        <Flex
+                            gap={3}
+                            display={['flex', 'flex', 'flex', 'flex', 'none']}
+                            justifyContent={'start'}>
+                            {project.tags.map((tag, idx) => (
+                                <Tag
+                                    key={idx}
+                                    size={'md'}
+                                    colorScheme={
+                                        tag.type === 'feature'
+                                            ? 'green'
+                                            : tag.type === 'bug fix'
+                                            ? 'red'
+                                            : tag.type === 'test'
+                                            ? 'blue'
+                                            : 'gray'
+                                    }
+                                    borderRadius={'md'}>
+                                    <TagLabel>{tag.text}</TagLabel>
+                                </Tag>
+                            ))}
+                        </Flex>
                         {project.work}
                         <Stack w={'full'}>
                             <ProjectTechList
                                 isOdd={idx % 2 !== 0}
-                                techList={project.tags}
+                                techList={project.tech}
                                 isInsideProjectCard={true}
                             />
+                            <Button
+                                variant='solid'
+                                bgColor={'#591090fb'}
+                                display={[
+                                    'block',
+                                    'block',
+                                    'block',
+                                    'block',
+                                    'none',
+                                ]}
+                                mt={3}
+                                _hover={{
+                                    bgColor: GRADIENT_ACCENT_COLOR,
+                                    opacity: 0.8,
+                                }}>
+                                <Box
+                                    display={'flex'}
+                                    alignItems='center'
+                                    justifyContent={'center'}
+                                    textColor={'white'}
+                                    gap={4}>
+                                    <span>View Contribution</span>
+                                    <BsBoxArrowUpRight />
+                                </Box>
+                            </Button>
                         </Stack>
                     </CardBody>
                 </Card>
                 <ProjectTechList
                     isOdd={idx % 2 !== 0}
-                    techList={project.tags}
+                    techList={project.tech}
                     isInsideProjectCard={false}
                 />
                 <Button
                     variant='solid'
+                    display={['none', 'none', 'none', 'none', 'inline-flex']}
                     bgColor={GRADIENT_ACCENT_COLOR}
                     mt={3}
                     _hover={{

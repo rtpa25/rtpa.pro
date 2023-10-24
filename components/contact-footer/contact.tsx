@@ -12,7 +12,7 @@ const ContactFooter = () => {
                     fontFamily={'mono'}
                     fontSize={'lg'}
                     mb={4}>
-                    05. What’s Next?
+                    07. What’s Next?
                 </Heading>
                 <Heading fontSize={'5xl'} mb={4}>
                     Get In Touch
@@ -26,7 +26,8 @@ const ContactFooter = () => {
                     lineHeight={'tall'}>
                     I’m currently looking for an internship at a seed or
                     series-A startup as a full-Stack Developer Intern and
-                    contribute to teams that want to make a difference. Rings a bell?
+                    contribute to teams that want to make a difference. Rings a
+                    bell?
                 </Text>
                 <Box mx={'auto'} w='fit-content' mt={10}>
                     <a
@@ -64,3 +65,4 @@ const ContactFooter = () => {
 };
 
 export default ContactFooter;
+

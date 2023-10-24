@@ -13,7 +13,7 @@ const Education = () => {
             <Box my={16}>
                 <SectionHeading
                     sectionHeadingText={'Course Certificates'}
-                    sectionHeadingNumber={4}
+                    sectionHeadingNumber={6}
                     showNumber={true}
                 />
             </Box>
@@ -67,3 +67,4 @@ const Education = () => {
 };
 
 export default Education;
+

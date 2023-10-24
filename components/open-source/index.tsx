@@ -11,7 +11,7 @@ const OpenSource = () => {
         <SectionWrapper variant='wide'>
             <Box mb={16}>
                 <SectionHeading
-                    sectionHeadingText={'Open Source Contributions'}
+                    sectionHeadingText={'Open Source'}
                     sectionHeadingNumber={4}
                     showNumber={true}
                 />

@@ -6,7 +6,7 @@ export const openSourceProjects: OpenSourceProject[] = [
         work: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quis accusantium labore ratione consequatur, sunt porro quasi possimus alias voluptatem esse exercitationem quas, est amet! Est deleniti voluptas itaque maiores!',
         github: 'https://github.com/formbricks/formbricks/pulls/rtpa25',
         imageUrl: './formbricks1.png',
-        tags: [
+        tech: [
             'TypeScript',
             'NextJS',
             'Prisma',
@@ -17,27 +17,63 @@ export const openSourceProjects: OpenSourceProject[] = [
             'TurboRepo',
             'Eslint',
         ],
+        tags: [
+            {
+                text: '3 Major Features',
+                type: 'feature',
+            },
+            {
+                text: 'bug fixes',
+                type: 'bug fix',
+            },
+        ],
     },
     {
         name: 'Trigger',
         work: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quis accusantium labore ratione consequatur, sunt porro quasi possimus alias voluptatem esse exercitationem quas, est amet! Est deleniti voluptas itaque maiores!',
         github: 'https://github.com/formbricks/formbricks/pulls/rtpa25',
         imageUrl: './trigger1.png',
-        tags: ['Helm Charts', 'Kubernetes', 'Docker', 'Documentation'],
+        tech: ['Helm Charts', 'Kubernetes', 'Docker', 'Documentation'],
+        tags: [
+            {
+                text: '1 Major Feature',
+                type: 'feature',
+            },
+            {
+                text: 'Documentation',
+                type: 'documentation',
+            },
+        ],
     },
     {
         name: 'Infisical',
         work: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quis accusantium labore ratione consequatur, sunt porro quasi possimus alias voluptatem esse exercitationem quas, est amet! Est deleniti voluptas itaque maiores!',
         github: 'https://github.com/formbricks/formbricks/pulls/rtpa25',
         imageUrl: './infisical1.png',
-        tags: ['TypeScript', 'NextJS', 'MongoDB', 'Mongoose', 'Tailwind'],
+        tech: ['TypeScript', 'NextJS', 'MongoDB', 'Mongoose', 'Tailwind'],
+        tags: [
+            {
+                text: '1 Feature',
+                type: 'feature',
+            },
+        ],
     },
     {
         name: 'Twenty',
         work: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quis accusantium labore ratione consequatur, sunt porro quasi possimus alias voluptatem esse exercitationem quas, est amet! Est deleniti voluptas itaque maiores!',
         github: 'https://github.com/formbricks/formbricks/pulls/rtpa25',
         imageUrl: './twenty1.png',
-        tags: ['TypeScript', 'ReactJS', 'GraphQL', 'StoryBook', 'NestJS'],
+        tech: ['TypeScript', 'ReactJS', 'GraphQL', 'StoryBook', 'NestJS'],
+        tags: [
+            {
+                text: '1 bug fix',
+                type: 'bug fix',
+            },
+            {
+                text: '1 test',
+                type: 'test',
+            },
+        ],
     },
 ];
 

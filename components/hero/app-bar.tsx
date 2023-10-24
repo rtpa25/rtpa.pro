@@ -68,7 +68,7 @@ const AppBar = () => {
                         );
                     })}
                 </ButtonGroup>
-                <IconButton
+                {/* <IconButton
                     onClick={toggleMusic}
                     aria-label='sound'
                     icon={<BsSoundwave />}
@@ -79,7 +79,7 @@ const AppBar = () => {
                         borderColor: ACCENT_COLOR,
                     }}
                     color={ACCENT_COLOR}
-                />
+                /> */}
                 <a href='/resume.pdf' target='_blank' rel='noreferrer'>
                     <Button
                         variant={'outline'}
@@ -104,3 +104,4 @@ const AppBar = () => {
 };
 
 export default AppBar;
+

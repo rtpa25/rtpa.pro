@@ -3,6 +3,10 @@ export interface OpenSourceProject {
     work: string;
     github: string;
     imageUrl: string;
-    tags: string[];
+    tech: string[];
+    tags: {
+        type: 'feature' | 'bug fix' | 'test' | 'documentation';
+        text: string;
+    }[];
 }
 

@@ -10,7 +10,7 @@ const Work = () => {
             <Box mb={16}>
                 <SectionHeading
                     sectionHeadingText={'Recent Projects'}
-                    sectionHeadingNumber={3}
+                    sectionHeadingNumber={5}
                     showNumber={true}
                 />
             </Box>
@@ -29,3 +29,4 @@ const Work = () => {
 };
 
 export default Work;
+
