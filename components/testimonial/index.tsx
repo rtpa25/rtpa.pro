@@ -15,7 +15,10 @@ const TestimonialCard = () => {
                     showNumber={true}
                 />
             </Box>
-            <Flex gap={10} flexDir={['column', 'column', 'column', 'row']}>
+            <Flex
+                gap={10}
+                flexDir={['column', 'column', 'column', 'row']}
+                mb={10}>
                 <Box className='image' flex={1}>
                     <Box
                         h={'fit-content'}

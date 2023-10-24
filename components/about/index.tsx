@@ -139,7 +139,7 @@ const About = () => {
                             _hover={{ opacity: 1 }}
                             rounded={'lg'}
                             alt='ronit'
-                            src='ronit.jpg'
+                            src='ronit.png'
                         />
                     </Tilt>
                 </Box>
