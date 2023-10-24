@@ -10,12 +10,16 @@ export const certificates: Certificate[] = [
         image: 'react-course-certificate.jpg',
     },
     {
-        name: 'tsc',
-        image: 'tsc-course-certificate.jpg',
+        name: 'devops',
+        image: 'devops.jpg',
     },
     {
-        name: 'js',
-        image: 'advanced-js-course-certificate.jpg',
+        name: 'gql',
+        image: 'gql.png',
+    },
+    {
+        name: 'tsc',
+        image: 'tsc-course-certificate.jpg',
     },
     {
         name: 'nest',
@@ -25,4 +29,9 @@ export const certificates: Certificate[] = [
         name: 'das',
         image: 'dsa-course-certificate.jpg',
     },
+    {
+        name: 'backend',
+        image: 'express.png',
+    },
 ];
+

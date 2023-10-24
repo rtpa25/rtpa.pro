@@ -18,7 +18,7 @@ const About = () => {
             </Box>
             <Flex flexDir={['column', 'column', 'column', 'row']}>
                 <Box flex={1.3} mr={6}>
-                    <Text
+                    {/* <Text
                         my={4}
                         fontSize={'lg'}
                         lineHeight={1.5}
@@ -58,6 +58,20 @@ const About = () => {
                             SuperTokens(YCS20){' '}
                         </Link>
                         as a Software Engineer
+                    </Text> */}
+                    <Text
+                        my={4}
+                        fontSize={'lg'}
+                        lineHeight={1.5}
+                        letterSpacing={'wide'}
+                        color={'gray.500'}>
+                        I started coding in late 2020. By mid 2021 I was already
+                        hooked and built a mobile app that got 1.5k downloads
+                        with a 4.9 rating on play store, Since then I have
+                        Worked at 2 startups as a full stack developer, Built
+                        internal UI libraries all the way to deploying
+                        kubernetes clusters, covering every realm of an
+                        app&apos;s lifecycle.
                     </Text>
 
                     <Text
@@ -74,7 +88,7 @@ const About = () => {
                             target='_blank'>
                             technologies
                         </Link>{' '}
-                        I’ve been working with recently:
+                        That I have mastered:
                     </Text>
                     <UnorderedList
                         mx={0}

@@ -53,7 +53,7 @@ const Education = () => {
                             }}
                             variant='outline'>
                             <Flex alignItems='flex-end'>
-                                <Text mr={2}>Show all 12 certificates </Text>
+                                <Text mr={2}>Show all 15 certificates</Text>
                                 <Box>
                                     <BsArrowRight />
                                 </Box>

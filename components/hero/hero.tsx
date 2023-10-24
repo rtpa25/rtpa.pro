@@ -54,12 +54,8 @@ const Hero = () => {
                     fontWeight={'light'}>
                     <Text>
                         {
-                            "I'm a software engineer based out of India specializing in building full stack web apps. Currently, I'm an looking to join a team of passionate people to build products that"
+                            "Hi, I'm, a software engineer from India having previously worked at SuperTokens (YC S20) and SuperKit (both while attending college). I've a habit of building sophisticated products & shipping them really fast: be it making an internal UI library, or handling infrastructure. I truly champion open source; having shipped to Formbricks, Trigger, Infisical, Twenty, Cal, HyperDX and many more. "
                         }{' '}
-                        <span style={{ color: ACCENT_COLOR }}>
-                            make a difference
-                        </span>
-                        .
                     </Text>
                 </Box>
                 <Box my={4}>

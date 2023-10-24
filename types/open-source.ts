@@ -5,7 +5,7 @@ export interface OpenSourceProject {
     imageUrl: string;
     tech: string[];
     tags: {
-        type: 'feature' | 'bug fix' | 'test' | 'documentation';
+        type: 'feature' | 'bug fix' | 'test' | 'documentation' | 'chore';
         text: string;
     }[];
 }
