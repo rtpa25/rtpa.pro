@@ -75,11 +75,11 @@ const About = () => {
                             ' on play store, Since then I have Worked at 2 startups as a full stack developer, Built '
                         }
                         <Link color={ACCENT_COLOR}>internal UI libraries</Link>
-                        {'all the way to '}
+                        {' all the way to '}
                         <Link color={ACCENT_COLOR}>
                             deploying Kubernetes Clusters
                         </Link>
-                        {"covering every realm of an app's lifecycle."}
+                        {" covering every realm of an app's lifecycle."}
                     </Text>
 
                     <Text

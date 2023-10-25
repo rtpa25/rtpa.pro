@@ -24,10 +24,10 @@ const ContactFooter = () => {
                     opacity={0.87}
                     letterSpacing='wide'
                     lineHeight={'tall'}>
-                    I’m currently looking for an internship at a seed or
-                    series-A startup as a full-Stack Developer Intern and
-                    contribute to teams that want to make a difference. Rings a
-                    bell?
+                    I’m currently looking for a full-stack developer role, In a
+                    pre-series A startup. And work along side a highly focussed
+                    team that is trying to put a dent in the universe. Sounds
+                    familiar? Let’s talk.
                 </Text>
                 <Box mx={'auto'} w='fit-content' mt={10}>
                     <a
